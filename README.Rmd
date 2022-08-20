@@ -1,0 +1,36 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# HGUTheme
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of HGUTheme is to ...
+
+## Installation
+
+You can install the development version of HGUTheme from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("hwarden162/HGUTheme")
+```
+
+## Colour Codes
+
+Dark Blue: #2D2E5F
+Mid Blue: #3A88A9
+Light Blue: #54BBD2
