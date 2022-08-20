@@ -15,8 +15,34 @@ scale_colour_gradient_hgu(
 )
 }
 \arguments{
-\item{aesthetics}{}
+\item{...}{Arguments to be passed on.}
+
+\item{low}{Colour for the low end of the gradient.}
+
+\item{high}{Colour for the high end of the gradient.}
+
+\item{space}{Colour space in which to calculate the gradient.}
+
+\item{na.value}{Colour to be used for missing values.}
+
+\item{guide}{Type of legend.}
+
+\item{aesthetics}{The aesthetic to apply this scale to.}
+}
+\value{
+A layer that can be added to a ggplot2 object.
 }
 \description{
 Scale Colours With A Gradient
+}
+\examples{
+library(tidyverse)
+tibble(
+  x = runif(100),
+  y = runif(100)
+) \%>\%
+  ggplot(aes(x = x, y = y, colour = x)) +
+  geom_point() +
+  scale_colour_gradient_hgu() +
+  theme_classic()
 }

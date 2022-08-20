@@ -2,18 +2,28 @@
 
 #' Scale Colours With A Gradient
 #'
-#' @param ...
-#' @param low
-#' @param high
-#' @param space
-#' @param na.value
-#' @param guide
-#' @param aesthetics
+#' @param ... Arguments to be passed on.
+#' @param low Colour for the low end of the gradient.
+#' @param high Colour for the high end of the gradient.
+#' @param space Colour space in which to calculate the gradient.
+#' @param na.value Colour to be used for missing values.
+#' @param guide Type of legend.
+#' @param aesthetics The aesthetic to apply this scale to.
 #'
-#' @return
+#' @return A layer that can be added to a ggplot2 object.
 #' @export
 #'
 #' @examples
+#' library(tidyverse)
+#' tibble(
+#'   x = runif(100),
+#'   y = runif(100)
+#' ) %>%
+#'   ggplot(aes(x = x, y = y, colour = x)) +
+#'   geom_point() +
+#'   scale_colour_gradient_hgu() +
+#'   theme_classic()
+
 scale_colour_gradient_hgu <- function(
     ...,
     low = "#2D2E5F",
