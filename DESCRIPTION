@@ -7,7 +7,7 @@ Authors@R: c(
     person("Jesko", "Wagner", , "jesko.wagner@ed.ac.uk", role = c("aut"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
     )
-Description: Unoffocial ggplot2 themes using the colour palette of the MRC HGU logo.
+Description: Unofficial ggplot2 themes using the colour palette of the MRC HGU logo.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
