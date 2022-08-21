@@ -15,7 +15,7 @@ library(HGUTheme)
 library(tidyverse)
 ```
 
-# HGUTheme <img src="man/figures/HGUHex.png" align="right" alt="" width="120" />
+# HGUTheme <img src="man/figures/HGUHex.png" align="right" alt="" width="180" />
 
 <!-- badges: start -->
 <!-- badges: end -->
