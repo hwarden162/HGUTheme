@@ -28,7 +28,7 @@ scale_colour_gradient_hgu <- function(
     low = hgu_dark(),
     high = hgu_light(),
     space = "Lab",
-    na.value = "grey50",
+    na.value = mrc_grey(),
     guide = "colourbar",
     aesthetics = "colour"
 ) {
@@ -75,7 +75,7 @@ scale_colour_gradient2_hgu <- function(
     high = hgu_light(),
     midpoint = 0,
     space = "Lab",
-    na.value = "grey50",
+    na.value = mrc_grey(),
     guide = "colourbar",
     aesthetics = "colour"
 ) {
