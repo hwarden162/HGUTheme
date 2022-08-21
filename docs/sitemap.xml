@@ -78,4 +78,25 @@
   <url>
     <loc>/reference/scale_colour_hgu_3col.html</loc>
   </url>
+  <url>
+    <loc>/reference/scale_fill_gradient2_hgu.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_fill_gradient_hgu.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_fill_hgu2.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_fill_hgu2_low_high.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_fill_hgu2_low_mid.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_fill_hgu2_mid_high.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_fill_hgu3.html</loc>
+  </url>
 </urlset>
