@@ -1,0 +1,94 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+library(HGUTheme)
+library(tidyverse)
+```
+
+# HGUTheme <img src="man/figures/HGUHex.png" align="right" alt="" width="120" />
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Unofficial ggplot2 themes using the colour palette of the MRC HGU logo.
+
+This package allows the user quickly change the colours of `ggplot2` plots such that they fit in with the colour theme set out in the MRC HGU powerpoint. For users comfortable with `ggplot2` there are functions to quickly return the HEX codes for each of the colours in the HGU and MRC colour themes. For users not so familiar with `ggplot2`, there are a variety of functions that act as wrappers for the styling functions that will automatically assign the correct colour values.
+
+**These palettes were created to align with the colour schemes of the MRC and HGU palettes. They were not designed for use on plots and so please consider the effect of your palette decisions for colourblind people when using.**
+
+## Installation
+
+You can install the development version of HGUTheme from [GitHub](https://github.com/hwarden162/HGUTheme) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("hwarden162/HGUTheme")
+```
+
+## Quick Use Guide
+
+Each colour has been assigned a function that will return a character string with the corresponding HEX code. For example:
+
+```{r}
+hgu_dark()
+```
+
+These are then grouped into palettes that are also stored in functions:
+
+```{r}
+hgu_palette()
+```
+
+For users' convenience, various functions have been written that set these colour values
+
+```{r}
+plot_data <- tibble(
+  class = c("A", "B", "C"),
+  value = c(0.5,0.3,0.2)
+)
+plot_data
+```
+
+A basic plot of this data would look like this
+
+```{r}
+plot_data %>%
+  ggplot(aes(x = class, y = value, fill = class)) +
+  geom_col() +
+  theme_classic()
+```
+
+A layer can be added to change the fill of the boxes to match that of the MRC HGU powerpoint theme
+
+```{r}
+plot_data %>%
+  ggplot(aes(x = class, y = value, fill = class)) +
+  geom_col() +
+  theme_classic() +
+  scale_fill_hgu3()
+```
+
+## Colour Codes
+Taken from the MRC HGU Powerpoint template:
+- ![#2D2E5F](https://via.placeholder.com/15/2D2E5F/2D2E5F.png) Dark blue: `#2D2E5F`
+- ![#3A88A9](https://via.placeholder.com/15/3A88A9/3A88A9.png) Mid blue: `#3A88A9`
+- ![#00BAD2](https://via.placeholder.com/15/00BAD2/00BAD2) Light blue: `#00BAD2`
+
+Taken from the MRC Powerpoint template:
+- ![#2E2C5E](https://via.placeholder.com/15/2E2C5E/2E2C5E.png) Dark blue: `#2E2C5E`
+- ![#102F83](https://via.placeholder.com/15/102F83/102F83.png) Darkish blue: `#102F83`
+- ![#305CEF](https://via.placeholder.com/15/305CEF/305CEF.png) Mid blue: `#305CEF`
+- ![#D85941](https://via.placeholder.com/15/D85941/D85941.png) Red: `#D85941`
+- ![#4AA789](https://via.placeholder.com/15/4AA789/4AA789.png) Green: `#4AA789`
+- ![#F1BE44](https://via.placeholder.com/15/F1BE44/F1BE44.png) Yellow: `#F1BE44`
+- ![#DADADA](https://via.placeholder.com/15/DADADA/DADADA.png) Gray: `#DADADA`

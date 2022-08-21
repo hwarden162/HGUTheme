@@ -31,7 +31,7 @@ hgu_mid <- function() {
 #' colour <- hgu_light()
 #' colour
 hgu_light <- function() {
-  "#54BBD2"
+  "#00BAD2"
 }
 
 #' Hex Value Colour Palette
