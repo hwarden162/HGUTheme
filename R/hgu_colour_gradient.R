@@ -14,15 +14,12 @@
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = runif(100),
-#'   y = runif(100)
-#' ) %>%
-#'   ggplot(aes(x = x, y = y, colour = x)) +
-#'   geom_point() +
-#'   scale_colour_gradient_hgu() +
-#'   theme_classic()
+#' ggplot(
+#'   data = data.frame(x = runif(100), y = runif(100)),
+#'   mapping = aes(x = x, y = y, colour = x)
+#' ) +
+#'   geom_point() + theme_classic() +
+#'   scale_colour_gradient_hgu()
 scale_colour_gradient_hgu <- function(
     ...,
     low = hgu_dark(),
@@ -59,15 +56,12 @@ scale_colour_gradient_hgu <- function(
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = runif(100),
-#'   y = runif(100)
-#' ) %>%
-#'   ggplot(aes(x = x, y = y, colour = x)) +
-#'   geom_point() +
-#'   scale_colour_gradient2_hgu(midpoint = 0.5) +
-#'   theme_classic()
+#' ggplot(
+#'   data = data.frame(x = runif(100), y = runif(100)),
+#'   mapping = aes(x = x, y = y, colour = x)
+#' ) +
+#'   geom_point() + theme_classic() +
+#'   scale_colour_gradient2_hgu(midpoint = 0.5)
 scale_colour_gradient2_hgu <- function(
     ...,
     low = hgu_dark(),

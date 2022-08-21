@@ -36,13 +36,10 @@ A layer that can be added to a ggplot2 object.
 Scale Colours With A Gradient
 }
 \examples{
-library(tidyverse)
-tibble(
-  x = runif(100),
-  y = runif(100)
-) \%>\%
-  ggplot(aes(x = x, y = y, colour = x)) +
-  geom_point() +
-  scale_colour_gradient_hgu() +
-  theme_classic()
+ggplot(
+  data = data.frame(x = runif(100), y = runif(100)),
+  mapping = aes(x = x, y = y, colour = x)
+) +
+  geom_point() + theme_classic() +
+  scale_colour_gradient_hgu()
 }

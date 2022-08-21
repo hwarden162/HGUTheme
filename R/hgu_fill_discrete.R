@@ -10,14 +10,11 @@
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = rnorm(30),
-#'   y = runif(30)
-#' ) %>%
-#'   ggplot(aes(x=x,y=y)) +
-#'   geom_density2d_filled(bins = 3) +
-#'   theme_classic() +
+#' ggplot(
+#'   data = data.frame(class = c("A", "B", "C"), value = c(0.5,0.3,0.2)),
+#'   mapping = aes(x = class, y = value, fill = class)
+#' ) +
+#'   geom_col() + theme_classic() +
 #'   scale_fill_hgu3()
 scale_fill_hgu3 <- function(
     ...,
@@ -47,14 +44,11 @@ scale_fill_hgu3 <- function(
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = rnorm(30),
-#'   y = runif(30)
-#' ) %>%
-#'   ggplot(aes(x=x,y=y)) +
-#'   geom_density2d_filled(bins = 2) +
-#'   theme_classic() +
+#' ggplot(
+#'   data = data.frame(class = c("A", "B"), value = c(0.6,0.4)),
+#'   mapping = aes(x = class, y = value, fill = class)
+#' ) +
+#'   geom_col() + theme_classic() +
 #'   scale_fill_hgu2_low_high()
 scale_fill_hgu2_low_high <- function(
     ...,
@@ -87,14 +81,11 @@ scale_fill_hgu2_low_high <- function(
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = rnorm(30),
-#'   y = runif(30)
-#' ) %>%
-#'   ggplot(aes(x=x,y=y)) +
-#'   geom_density2d_filled(bins = 2) +
-#'   theme_classic() +
+#' ggplot(
+#'   data = data.frame(class = c("A", "B"), value = c(0.6,0.4)),
+#'   mapping = aes(x = class, y = value, fill = class)
+#' ) +
+#'   geom_col() + theme_classic() +
 #'   scale_fill_hgu2_mid_high()
 scale_fill_hgu2_mid_high <- function(
     ...,
@@ -127,14 +118,11 @@ scale_fill_hgu2_mid_high <- function(
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = rnorm(30),
-#'   y = runif(30)
-#' ) %>%
-#'   ggplot(aes(x=x,y=y)) +
-#'   geom_density2d_filled(bins = 2) +
-#'   theme_classic() +
+#' ggplot(
+#'   data = data.frame(class = c("A", "B"), value = c(0.6,0.4)),
+#'   mapping = aes(x = class, y = value, fill = class)
+#' ) +
+#'   geom_col() + theme_classic() +
 #'   scale_fill_hgu2_low_mid()
 scale_fill_hgu2_low_mid <- function(
     ...,
@@ -167,14 +155,11 @@ scale_fill_hgu2_low_mid <- function(
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = rnorm(30),
-#'   y = runif(30)
-#' ) %>%
-#'   ggplot(aes(x=x,y=y)) +
-#'   geom_density2d_filled(bins = 2) +
-#'   theme_classic() +
+#' ggplot(
+#'   data = data.frame(class = c("A", "B"), value = c(0.6,0.4)),
+#'   mapping = aes(x = class, y = value, fill = class)
+#' ) +
+#'   geom_col() + theme_classic() +
 #'   scale_fill_hgu2()
 scale_fill_hgu2 <- function(
     ...,

@@ -12,12 +12,10 @@
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = rnorm(500000),
-#'   y = rnorm(500000)
-#' ) %>%
-#'   ggplot(aes(x = x, y = y)) +
+#' ggplot(
+#'   data = data.frame(x = rnorm(10000), y = rnorm(10000)),
+#'   mapping = aes(x = x, y = y)
+#' ) +
 #'   geom_hex(bins = 40) + theme_classic() +
 #'   scale_fill_gradient_hgu()
 scale_fill_gradient_hgu <- function(
@@ -56,14 +54,12 @@ scale_fill_gradient_hgu <- function(
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = rnorm(500000),
-#'   y = rnorm(500000)
-#' ) %>%
-#'   ggplot(aes(x = x, y = y)) +
+#' ggplot(
+#'   data = data.frame(x = rnorm(10000), y = rnorm(10000)),
+#'   mapping = aes(x = x, y = y)
+#' ) +
 #'   geom_hex(bins = 40) + theme_classic() +
-#'   scale_fill_gradient2_hgu(midpoint = 1600)
+#'   scale_fill_gradient2_hgu(midpoint = 25)
 scale_fill_gradient2_hgu <- function(
     ...,
     low = hgu_dark(),

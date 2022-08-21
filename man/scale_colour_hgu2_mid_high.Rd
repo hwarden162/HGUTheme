@@ -30,14 +30,10 @@ A layer that can be added to a ggplot2 object.
 Assign Discrete HGU 2 Colour Palette
 }
 \examples{
-library(tidyverse)
-tibble(
-  x = rnorm(60),
-  y = rnorm(60),
-  col = rep(c("a", "b"), 30)
-) \%>\%
-  ggplot(aes(x = x, y = y, colour = col)) +
-  geom_point() +
-  scale_colour_hgu2_mid_high() +
-  theme_classic()
+ggplot(
+  data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B"), 30)),
+  mapping = aes(x = x, y = y, colour = colour)
+) +
+  geom_point() + theme_classic() +
+  scale_colour_hgu2_mid_high()
 }

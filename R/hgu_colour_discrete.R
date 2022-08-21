@@ -10,16 +10,12 @@
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = rnorm(60),
-#'   y = rnorm(60),
-#'   col = rep(c("a", "b", "c"), 20)
-#' ) %>%
-#'   ggplot(aes(x = x, y = y, colour = col)) +
-#'   geom_point() +
-#'   scale_colour_hgu3() +
-#'   theme_classic()
+#' ggplot(
+#'   data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B", "C"), 20)),
+#'   mapping = aes(x = x, y = y, colour = colour)
+#' ) +
+#'   geom_point() + theme_classic() +
+#'   scale_colour_hgu3()
 scale_colour_hgu3 <- function(
     ...,
     values = hgu_palette(),
@@ -48,16 +44,12 @@ scale_colour_hgu3 <- function(
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = rnorm(60),
-#'   y = rnorm(60),
-#'   col = rep(c("a", "b"), 30)
-#' ) %>%
-#'   ggplot(aes(x = x, y = y, colour = col)) +
-#'   geom_point() +
-#'   scale_colour_hgu2_low_high() +
-#'   theme_classic()
+#' ggplot(
+#'   data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B"), 30)),
+#'   mapping = aes(x = x, y = y, colour = colour)
+#' ) +
+#'   geom_point() + theme_classic() +
+#'   scale_colour_hgu2_low_high()
 scale_colour_hgu2_low_high <- function(
     ...,
     values = c(
@@ -89,16 +81,12 @@ scale_colour_hgu2_low_high <- function(
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = rnorm(60),
-#'   y = rnorm(60),
-#'   col = rep(c("a", "b"), 30)
-#' ) %>%
-#'   ggplot(aes(x = x, y = y, colour = col)) +
-#'   geom_point() +
-#'   scale_colour_hgu2_low_mid() +
-#'   theme_classic()
+#' ggplot(
+#'   data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B"), 30)),
+#'   mapping = aes(x = x, y = y, colour = colour)
+#' ) +
+#'   geom_point() + theme_classic() +
+#'   scale_colour_hgu2_low_mid()
 scale_colour_hgu2_low_mid <- function(
     ...,
     values = c(
@@ -131,16 +119,12 @@ scale_colour_hgu2_low_mid <- function(
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = rnorm(60),
-#'   y = rnorm(60),
-#'   col = rep(c("a", "b"), 30)
-#' ) %>%
-#'   ggplot(aes(x = x, y = y, colour = col)) +
-#'   geom_point() +
-#'   scale_colour_hgu2_mid_high() +
-#'   theme_classic()
+#' ggplot(
+#'   data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B"), 30)),
+#'   mapping = aes(x = x, y = y, colour = colour)
+#' ) +
+#'   geom_point() + theme_classic() +
+#'   scale_colour_hgu2_mid_high()
 scale_colour_hgu2_mid_high <- function(
     ...,
     values = c(
@@ -172,16 +156,12 @@ scale_colour_hgu2_mid_high <- function(
 #' @export
 #'
 #' @examples
-#' library(tidyverse)
-#' tibble(
-#'   x = rnorm(60),
-#'   y = rnorm(60),
-#'   col = rep(c("a", "b"), 30)
-#' ) %>%
-#'   ggplot(aes(x = x, y = y, colour = col)) +
-#'   geom_point() +
-#'   scale_colour_hgu2() +
-#'   theme_classic()
+#' ggplot(
+#'   data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B"), 30)),
+#'   mapping = aes(x = x, y = y, colour = colour)
+#' ) +
+#'   geom_point() + theme_classic() +
+#'   scale_colour_hgu2()
 scale_colour_hgu2 <- function(
     ...,
     values = c(
