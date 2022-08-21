@@ -5,3 +5,4 @@
 * Functions for discrete HGU blues added.
 * Functions for continuous HGU blues added.
 * Added a `NEWS.md` file to track changes to the package.
+* Created `pkgdown` documentation.
