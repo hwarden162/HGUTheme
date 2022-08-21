@@ -1,6 +1,6 @@
 Package: HGUTheme
 Title: Unofficial ggplot2 For The HGU
-Version: 0.1.0
+Version: 0.0.1
 Authors@R: c(
     person("Hugh", "Warden", , "h.b.warden@sms.ed.ac.uk", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID")),
