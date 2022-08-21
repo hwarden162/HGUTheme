@@ -11,7 +11,7 @@ scale_colour_gradient2_hgu(
   high = hgu_light(),
   midpoint = 0,
   space = "Lab",
-  na.value = "grey50",
+  na.value = mrc_grey(),
   guide = "colourbar",
   aesthetics = "colour"
 )

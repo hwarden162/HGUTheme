@@ -61,6 +61,21 @@
     <loc>/reference/scale_colour_gradient_hgu.html</loc>
   </url>
   <url>
+    <loc>/reference/scale_colour_hgu2.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_colour_hgu2_low_high.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_colour_hgu2_low_mid.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_colour_hgu2_mid_high.html</loc>
+  </url>
+  <url>
+    <loc>/reference/scale_colour_hgu3.html</loc>
+  </url>
+  <url>
     <loc>/reference/scale_colour_hgu_3col.html</loc>
   </url>
 </urlset>
