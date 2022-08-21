@@ -36,12 +36,11 @@ A layer that can be added to a ggplot2 object.
 Scale Fill With A Gradient
 }
 \examples{
-library(tidyverse)
-tibble(
-  x = rnorm(500000),
-  y = rnorm(500000)
-) \%>\%
-  ggplot(aes(x = x, y = y)) +
+library(ggplot2)
+ggplot(
+  data = data.frame(x = rnorm(10000), y = rnorm(10000)),
+  mapping = aes(x = x, y = y)
+) +
   geom_hex(bins = 40) + theme_classic() +
   scale_fill_gradient_hgu()
 }

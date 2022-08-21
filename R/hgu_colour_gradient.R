@@ -14,6 +14,7 @@
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(x = runif(100), y = runif(100)),
 #'   mapping = aes(x = x, y = y, colour = x)
@@ -56,6 +57,7 @@ scale_colour_gradient_hgu <- function(
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(x = runif(100), y = runif(100)),
 #'   mapping = aes(x = x, y = y, colour = x)

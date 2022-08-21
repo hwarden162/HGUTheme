@@ -10,6 +10,7 @@
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(class = c("A", "B", "C"), value = c(0.5,0.3,0.2)),
 #'   mapping = aes(x = class, y = value, fill = class)
@@ -44,6 +45,7 @@ scale_fill_hgu3 <- function(
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(class = c("A", "B"), value = c(0.6,0.4)),
 #'   mapping = aes(x = class, y = value, fill = class)
@@ -81,6 +83,7 @@ scale_fill_hgu2_low_high <- function(
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(class = c("A", "B"), value = c(0.6,0.4)),
 #'   mapping = aes(x = class, y = value, fill = class)
@@ -118,6 +121,7 @@ scale_fill_hgu2_mid_high <- function(
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(class = c("A", "B"), value = c(0.6,0.4)),
 #'   mapping = aes(x = class, y = value, fill = class)
@@ -155,6 +159,7 @@ scale_fill_hgu2_low_mid <- function(
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(class = c("A", "B"), value = c(0.6,0.4)),
 #'   mapping = aes(x = class, y = value, fill = class)

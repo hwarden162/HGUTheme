@@ -30,13 +30,11 @@ A layer that can be added to a ggplot2 object.
 Assign Discrete HGU 3 Colour Fill Palette
 }
 \examples{
-library(tidyverse)
-tibble(
-  x = rnorm(30),
-  y = runif(30)
-) \%>\%
-  ggplot(aes(x=x,y=y)) +
-  geom_density2d_filled(bins = 3) +
-  theme_classic() +
+library(ggplot2)
+ggplot(
+  data = data.frame(class = c("A", "B", "C"), value = c(0.5,0.3,0.2)),
+  mapping = aes(x = class, y = value, fill = class)
+) +
+  geom_col() + theme_classic() +
   scale_fill_hgu3()
 }

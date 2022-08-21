@@ -10,6 +10,7 @@
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B", "C"), 20)),
 #'   mapping = aes(x = x, y = y, colour = colour)
@@ -44,6 +45,7 @@ scale_colour_hgu3 <- function(
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B"), 30)),
 #'   mapping = aes(x = x, y = y, colour = colour)
@@ -81,6 +83,7 @@ scale_colour_hgu2_low_high <- function(
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B"), 30)),
 #'   mapping = aes(x = x, y = y, colour = colour)
@@ -119,6 +122,7 @@ scale_colour_hgu2_low_mid <- function(
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B"), 30)),
 #'   mapping = aes(x = x, y = y, colour = colour)
@@ -156,6 +160,7 @@ scale_colour_hgu2_mid_high <- function(
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B"), 30)),
 #'   mapping = aes(x = x, y = y, colour = colour)

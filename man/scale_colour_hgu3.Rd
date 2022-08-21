@@ -30,6 +30,7 @@ A layer that can be added to a ggplot2 object.
 Assign Discrete HGU 3 Colour Palette
 }
 \examples{
+library(ggplot2)
 ggplot(
   data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B", "C"), 20)),
   mapping = aes(x = x, y = y, colour = colour)

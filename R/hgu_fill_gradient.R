@@ -12,6 +12,7 @@
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(x = rnorm(10000), y = rnorm(10000)),
 #'   mapping = aes(x = x, y = y)
@@ -54,6 +55,7 @@ scale_fill_gradient_hgu <- function(
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
 #' ggplot(
 #'   data = data.frame(x = rnorm(10000), y = rnorm(10000)),
 #'   mapping = aes(x = x, y = y)

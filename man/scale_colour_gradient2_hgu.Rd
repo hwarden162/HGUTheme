@@ -42,6 +42,7 @@ A layer that can be added to a ggplot2 object.
 Scale Colours With A Gradient
 }
 \examples{
+library(ggplot2)
 ggplot(
   data = data.frame(x = runif(100), y = runif(100)),
   mapping = aes(x = x, y = y, colour = x)
