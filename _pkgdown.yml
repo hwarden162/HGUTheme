@@ -8,7 +8,7 @@ authors:
 
 template:
   bootstrap: 5
-  bootswatch: yeti
+  bootswatch: lumen
 
 reference:
 - title: "Accessing Hex Codes"
