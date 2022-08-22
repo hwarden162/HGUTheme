@@ -8,15 +8,17 @@
 [![pages-build-deployment](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment)
 <!-- badges: end -->
 
-Unofficial ggplot2 themes using the colour palette of the MRC HGU logo.
+Unofficial ggplot2 themes for using the colour palette of the MRC HGU
+logo.
 
-This package allows the user quickly change the colours of `ggplot2`
-plots such that they fit in with the colour theme set out in the MRC HGU
-powerpoint. For users comfortable with `ggplot2` there are functions to
-quickly return the HEX codes for each of the colours in the HGU and MRC
-colour themes. For users not so familiar with `ggplot2`, there are a
-variety of functions that act as wrappers for the styling functions that
-will automatically assign the correct colour values.
+The MRC Human Genetics Unit Powerpoint template comes with a preset
+colour theme that controls the colours of most elements of the
+presentation. When creating a plot in `ggplot2` it is possible to set
+the colour of various parts of various elements and `HGUTheme` contains
+multiple functions to help you do so. It is not always appropriate to
+use these colours (as discussed in ‘Get started’) but where it is
+appropriate `HGUTheme` allows you to easily create a consistent colour
+theme for your presentations.
 
 **These palettes were created to align with the colour schemes of the
 MRC and HGU palettes. However, the original palettes were not designed
