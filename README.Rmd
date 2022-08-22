@@ -85,11 +85,13 @@ plot_data %>%
 
 ## Colour Codes
 Taken from the MRC HGU Powerpoint template:
+
 * ![#2D2E5F](https://via.placeholder.com/15/2D2E5F/2D2E5F.png) Dark blue: `#2D2E5F`
 * ![#3A88A9](https://via.placeholder.com/15/3A88A9/3A88A9.png) Mid blue: `#3A88A9`
 * ![#00BAD2](https://via.placeholder.com/15/00BAD2/00BAD2) Light blue: `#00BAD2`
 
 Taken from the MRC Powerpoint template:
+
 * ![#2E2C5E](https://via.placeholder.com/15/2E2C5E/2E2C5E.png) Dark blue: `#2E2C5E`
 * ![#102F83](https://via.placeholder.com/15/102F83/102F83.png) Darkish blue: `#102F83`
 * ![#305CEF](https://via.placeholder.com/15/305CEF/305CEF.png) Mid blue: `#305CEF`
