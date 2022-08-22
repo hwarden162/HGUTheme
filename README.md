@@ -51,7 +51,7 @@ These are then grouped into palettes that are also stored in functions:
 
 ``` r
 hgu_palette()
-#> [1] "#2D2E5F" "#3A88A9" "#00BAD2"
+#> [1] "#2D2E5F" "#3A88A9" "#54BBD2"
 ```
 
 For users’ convenience, various functions have been written that set
