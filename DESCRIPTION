@@ -3,9 +3,9 @@ Title: Unofficial ggplot2 For The HGU
 Version: 0.0.1
 Authors@R: c(
     person("Hugh", "Warden", , "h.b.warden@sms.ed.ac.uk", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID")),
+           comment = c(ORCID = "0000-0002-4308-7316")),
     person("Jesko", "Wagner", , "jesko.wagner@ed.ac.uk", role = c("aut"),
-           comment = c(ORCID = "YOUR-ORCID-ID")),
+           ),
     person("MRC", "HGU", , , role = c("his"),
            )
     )
