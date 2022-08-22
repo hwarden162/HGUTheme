@@ -1,108 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/404.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/404.html</loc>
   </url>
   <url>
-    <loc>/LICENSE-text.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/LICENSE-text.html</loc>
   </url>
   <url>
-    <loc>/LICENSE.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/LICENSE.html</loc>
   </url>
   <url>
-    <loc>/READMEold.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/READMEold.html</loc>
   </url>
   <url>
-    <loc>/authors.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/articles/HGUTheme.html</loc>
   </url>
   <url>
-    <loc>/index.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/articles/index.html</loc>
   </url>
   <url>
-    <loc>/news/index.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/authors.html</loc>
   </url>
   <url>
-    <loc>/reference/hgu_dark.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/index.html</loc>
   </url>
   <url>
-    <loc>/reference/hgu_light.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/news/index.html</loc>
   </url>
   <url>
-    <loc>/reference/hgu_mid.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/hgu_dark.html</loc>
   </url>
   <url>
-    <loc>/reference/hgu_palette.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/hgu_light.html</loc>
   </url>
   <url>
-    <loc>/reference/index.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/hgu_mid.html</loc>
   </url>
   <url>
-    <loc>/reference/mrc_dark_blue.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/hgu_palette.html</loc>
   </url>
   <url>
-    <loc>/reference/mrc_darkish_blue.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/index.html</loc>
   </url>
   <url>
-    <loc>/reference/mrc_gray.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/mrc_dark_blue.html</loc>
   </url>
   <url>
-    <loc>/reference/mrc_green.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/mrc_darkish_blue.html</loc>
   </url>
   <url>
-    <loc>/reference/mrc_grey.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/mrc_gray.html</loc>
   </url>
   <url>
-    <loc>/reference/mrc_mid_blue.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/mrc_green.html</loc>
   </url>
   <url>
-    <loc>/reference/mrc_red.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/mrc_grey.html</loc>
   </url>
   <url>
-    <loc>/reference/mrc_yellow.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/mrc_mid_blue.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_colour_gradient2_hgu.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/mrc_red.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_colour_gradient_hgu.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/mrc_yellow.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_colour_hgu2.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_gradient2_hgu.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_colour_hgu2_low_high.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_gradient_hgu.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_colour_hgu2_low_mid.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_hgu2.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_colour_hgu2_mid_high.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_hgu2_low_high.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_colour_hgu3.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_hgu2_low_mid.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_colour_hgu_3col.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_hgu2_mid_high.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_fill_gradient2_hgu.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_hgu3.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_fill_gradient_hgu.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_hgu_3col.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_fill_hgu2.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_gradient2_hgu.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_fill_hgu2_low_high.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_gradient_hgu.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_fill_hgu2_low_mid.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_hgu2.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_fill_hgu2_mid_high.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_hgu2_low_high.html</loc>
   </url>
   <url>
-    <loc>/reference/scale_fill_hgu3.html</loc>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_hgu2_low_mid.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_hgu2_mid_high.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_hgu3.html</loc>
   </url>
 </urlset>

@@ -1,0 +1,266 @@
+---
+title: "HGUTheme"
+output: 
+  rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{HGUTheme}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+
+library(HGUTheme)
+library(tidyverse)
+```
+
+`HGUThemes` was made to include a lot of shortcuts to allow you to quickly format your `ggplot2` plots to use colours present in the MRC HGU Powerpoint colour theme. There are currently two main ways of doing this (i) use functions to quickly access colour hex codes and (ii) use functions to quickly add layers that automatically colour your plots.
+
+**Please be conscious about making your plots accessible to people who suffer from colourblindness and related conditions when choosing your colour themes. Many packages are available to help with this, including [viridis](https://github.com/sjmgarnier/viridis) and [ColourblindR](https://ubc-mds.github.io/ColourblindR/) as well as many more. We also highly recommend [colorblindr](https://github.com/clauswilke/colorblindr) that contains functions that allow you to simulate many forms of colourblindness to ensure accessibility.**
+
+## Accessing Colour Hex Codes
+
+There are many ways of representing colours whilst you are coding, one very common method that we use in this package (and is widely used in R) are hex codes. Here, "hex" is short for "hexadecimal", which is a number system that uses the numbers 0-9 as well as the letters A-F (more info [here](https://en.wikipedia.org/wiki/Hexadecimal)). A colour can be represented in hex as a character string starting with a # and followed by 6 characters from either 0-9 or A-F. Here are some common hex colours:
+
+ * ![#000000](https://via.placeholder.com/15/000000/000000) Black: `#000000`
+ * ![#FFFFFF](https://via.placeholder.com/15/FFFFFF/FFFFFF) White: `#FFFFFF`
+ * ![#FF0000](https://via.placeholder.com/15/FF0000/FF0000) Red: `#FF0000`
+ * ![#00FF00](https://via.placeholder.com/15/00FF00/00FF00) Green: `#00FF00`
+ * ![#0000FF](https://via.placeholder.com/15/0000FF/0000FF) Blue: `#0000FF`
+ * ![#FFD700](https://via.placeholder.com/15/FFD700/FFD700) Gold: `#FFD700`
+ * ![#C0C0C0](https://via.placeholder.com/15/C0C0C0/C0C0C0) Silver: `#C0C0C0`
+ * ![#967444](https://via.placeholder.com/15/967444/967444) Bronze: `#967444`
+ 
+Rather than having to remember these codes, `HGUThemes` has functions to remember useful ones for you. The most prominent colours from the MRC HGU Powerpoint template are the three shades of blue present in the logo in the bottom left (as well as default colours for text box text and shapes). Here are these three colours in hex:
+
+ * ![#2D2E5F](https://via.placeholder.com/15/2D2E5F/2D2E5F) Dark Blue: `#2D2E5F`
+ * ![#3A88A9](https://via.placeholder.com/15/3A88A9/3A88A9) Mid Blue: `#3A88A9`
+ * ![#00BAD2](https://via.placeholder.com/15/00BAD2/00BAD2) Light Blue: `#00BAD2`
+ 
+ Rather than writing these down, you can access them using `HGUTheme` functions:
+ 
+```{r}
+# MRC HGU Dark Blue
+hgu_dark()
+# MRC HGU Mid Blue
+hgu_mid()
+# MRC HGU Light Blue
+hgu_light()
+```
+
+These can be useful for quickly colouring `ggplot2` plots, lets make a quick example. A fairly common plot you might make as a scientist is a scatter plot with a trend and then putting a linear regression line on top. First we can make some fake data 
+
+```{r}
+plot_data <- tibble(
+  x = runif(100),
+  y = x + rnorm(100, 0, 0.2)
+)
+plot_data
+```
+ 
+Then we can make a simple plot that you might make for a presentation:
+```{r, message = FALSE}
+ggplot(
+  data = plot_data,
+  mapping = aes(x = x, y = y)
+) +
+  # Adding a y = x line
+  geom_abline(
+    intercept = 0, # Setting the intercept of the line to 0
+    slope = 1, # Setting the slope of the line to 1
+    linetype = 2, # Setting the line to be dashed
+    size = 1.5, # Setting the line to be slightly thicker than default (default is 1)
+    colour = "blue" # Setting the colour of the line to blue
+  ) +
+  # Adding a scatter plot
+  geom_point(
+    colour = "black" # Setting the colour of the points to black (black is the default)
+  ) +
+  # Adding linear regression line
+  geom_smooth(
+    method = "lm", # Setting the method to calculate the line to linear regression
+    se = FALSE, # Removing the standard error bars
+    colour = "red" # Setting the colour of the line to red
+  ) +
+  theme_bw() + # Adding a black and white theme
+  # Adding labels to the plot
+  labs(
+    title = "Comparing X and Y", # Setting the title
+    caption = "Blue dashed line shows 1:1 relationship" # Setting the caption
+  )
+```
+
+Here we have some points in black, a linear regression line in red and a reference line of y = x in blue. In the code you can see that we have used some already built in presets to set the colours of each of these elements using colour names (e.g. `"blue"`). If you wanted to set the colour of parts of these plots to be that of the MRC HGU logo you can replace this with the hex code functions (which will supply the hex code instead).
+
+```{r, message = FALSE}
+ggplot(
+  data = plot_data,
+  mapping = aes(x = x, y = y)
+) +
+  # Adding a y = x line
+  geom_abline(
+    intercept = 0, # Setting the intercept of the line to 0
+    slope = 1, # Setting the slope of the line to 1
+    linetype = 2, # Setting the line to be dashed
+    size = 1.5, # Setting the line to be slightly thicker than default (default is 1)
+    colour = hgu_mid() # Setting the colour of the line to blue
+  ) +
+  # Adding a scatter plot
+  geom_point(
+    colour = hgu_dark() # Setting the colour of the points to black (black is the default)
+  ) +
+  # Adding linear regression line
+  geom_smooth(
+    method = "lm", # Setting the method to calculate the line to linear regression
+    se = FALSE, # Removing the standard error bars
+    colour = hgu_light() # Setting the colour of the line to red
+  ) +
+  theme_bw() + # Adding a black and white theme
+  # Adding labels to the plot
+  labs(
+    title = "Comparing X and Y", # Setting the title
+    caption = "Blue dashed line shows 1:1 relationship" # Setting the caption
+  )
+```
+
+You may not want to go all out with the colours, as has been done here, but this shows you the concept of how you can use these functions to quickly access the hex codes from the MRC HGU colour theme to use wherever will accept a colour.
+
+## Adding Layers To `ggplot2` Plots
+
+There are a few common cases where you will want to apply certain colour themes to a `ggplot2` plot. To save time, these have been coded and supplied as part of this package. An obvious example of this is a three column bar chart:
+
+```{r, message = FALSE}
+plot_data <- tibble(
+  class = c("A", "B", "C"),
+  value = c(0.5, 0.3, 0.2)
+)
+plot_data
+```
+
+```{r, message = FALSE}
+ggplot(
+  data = plot_data,
+  aes(x = class, y = value)
+) +
+  # Adding column plot
+  geom_col() +
+  theme_bw() # Adding a black and white theme
+```
+
+In this case, the colour is not giving any information to the plot and so changing the colours will only be an aesthetic change and not affect the message of the plot. Here we have three different "classes" (represented on the x-axis) that we can colour using the `fill`.
+
+```{r, message = FALSE}
+ggplot(
+  data = plot_data,
+  aes(x = class, y = value, fill = class)
+) +
+  # Adding column plot
+  geom_col() +
+  theme_bw() # Adding a black and white theme
+```
+
+Just adding `class` as a fill aesthetic colours in the plot using the default `ggplot2` colour theme, which is not very fitting in the powerpoint theme and can look rather "garish". We can quickly add the MRC HGU theme using the function `scale_fill_hgu3()` (we also use the `guides` function to remove the colour legend as it is not necessary).
+
+```{r, message = FALSE}
+ggplot(
+  data = plot_data,
+  aes(x = class, y = value, fill = class)
+) +
+  # Adding column plot
+  geom_col() +
+  theme_bw() + # Adding a black and white theme
+  guides(fill = "none") + # Removing the legend for the fill colours
+  scale_fill_hgu3() # Adding the MRC HGU colour theme
+```
+
+The 3 in `scale_fill_hgu3` stands for 3 colour, if you are making a similar plot with 2 colours then the `scale_fill_hgu2` can be used instead
+
+```{r, message = FALSE}
+plot_data <- tibble(
+  class = c("A", "B"),
+  value = c(0.6, 0.4)
+)
+
+ggplot(
+  data = plot_data,
+  aes(x = class, y = value, fill = class)
+) +
+  # Adding column plot
+  geom_col() +
+  theme_bw() + # Adding a black and white theme
+  guides(fill = "none") + # Removing the legend for the fill colours
+  scale_fill_hgu2() # Adding the MRC HGU colour theme
+```
+
+By default, this uses the darkest and lightest blues, this can be quickly changed by using similar `scale_fill_hgu2_*_*` functions. For example, to use the mid blue (mid) and light blue (high) as your two colours for the plot, the `scale_fill_hgu2_mid_light` function can be used instead
+
+```{r, message = FALSE}
+ggplot(
+  data = plot_data,
+  aes(x = class, y = value, fill = class)
+) +
+  # Adding column plot
+  geom_col() +
+  theme_bw() + # Adding a black and white theme
+  guides(fill = "none") + # Removing the legend for the fill colours
+  scale_fill_hgu2_mid_high() # Adding the MRC HGU colour theme
+```
+
+**In these examples the colour was only being used for aesthetic purposes. Please be careful if you are conveying information using the colours as this can make very confusing plots, expecially for people with colourblind related conditions.** For example, this scatter plot is not an appropriate use of the colours.
+
+```{r, message = FALSE}
+plot_data <- tibble(
+  x = runif(100),
+  y = runif(100),
+  colour = rep(c("A", "B"), 50)
+)
+
+ggplot(
+  data = plot_data,
+  mapping = aes(x = x, y = y, colour = colour)
+) +
+  geom_point() + # Creating scatter plot
+  theme_classic() + # Adding the classic theme
+  scale_colour_hgu2_mid_high() + # Adding the mid and light blue MRC HGU colour theme
+  # Adding title
+  labs(
+    title = "An **Inappropriate** Use Of The Colour Palette"
+  )
+```
+
+It is very hard for anyone to tell the difference between these colours. In the same vein, `HGUTheme` provides gradient functions to be used to colour plots by a continuous variable. Here is an example
+
+```{r, message = FALSE}
+plot_data <- tibble(
+  x = rnorm(100000),
+  y = rnorm(100000)
+)
+
+ggplot(
+  data = plot_data,
+  mapping = aes(x = x, y = y)
+) +
+  geom_hex(bins = 40) + # Adding density plot
+  theme_classic() + # Setting the theme to classic
+  scale_fill_gradient_hgu() # Adding the MRC HGU colour theme gradient
+```
+
+Although these functions are supplied, mostly out of completeness, it is much clearer to use a theme such as thos supplied by the viridis package
+
+```{r, message = FALSE}
+ggplot(
+  data = plot_data,
+  mapping = aes(x = x, y = y)
+) +
+  geom_hex(bins = 40) + # Adding density plot
+  theme_classic() + # Setting the theme to classic
+  scale_fill_viridis_c() # Adding a colourblind friendly theme from viridis
+```
+
+
+
+
