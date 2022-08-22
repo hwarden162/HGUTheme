@@ -6,7 +6,7 @@ authors:
   Jesko Wagner:
     href: https://jeskowagner.github.io/
   MRC Human Genetics Unit:
-    html: https://jeskowagner.github.io/assets/img/cv_pic_cropped.jpg
+    html: "<img src='https://www.ed.ac.uk/sites/default/files/styles/subsite_brand_landscape_breakpoints_theme_uoe_tv_1x/public/ukri-mrc-hgu-web_1.png?itok=vM02u-0B&timestamp=1617262281' width=72>"
 
 template:
   bootstrap: 5
