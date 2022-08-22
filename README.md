@@ -1,6 +1,4 @@
 
-# HGUTheme
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # HGUTheme <img src="man/figures/HGUHex.png" align="right" alt="" width="180" />
