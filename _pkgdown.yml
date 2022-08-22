@@ -8,6 +8,7 @@ authors:
 
 template:
   bootstrap: 5
+  bootswatch: yeti
 
 reference:
 - title: "Accessing Hex Codes"
