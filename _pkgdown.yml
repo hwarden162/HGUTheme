@@ -3,10 +3,8 @@ url: https://hwarden162.github.io/HGUTheme/
 authors:
   Hugh Warden:
     href: https://hwarden.com
-    html: "<img src='https://www.hwarden.com/author/hugh-warden/avatar_hucdffff2f630843f588053fb03e5125d0_72013_270x270_fill_q75_lanczos_center.jpg' width=72>"
   Jesko Wagner:
     href: https://jeskowagner.github.io/
-    html: "<img src='https://jeskowagner.github.io/assets/img/cv_pic_cropped.jpg' width=72>"
 
 template:
   bootstrap: 5
