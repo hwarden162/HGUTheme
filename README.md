@@ -1,13 +1,15 @@
 
 # HGUTheme
 
-\<!– README.md is generated from README.Rmd. Please edit that file –
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # HGUTheme <img src="man/figures/HGUHex.png" align="right" alt="" width="180" />
 
-\<!– badges: start –
+<!-- badges: start -->
+
+[![pages-build-deployment](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment)
 [![R-CMD-check](https://github.com/hwarden162/HGUTheme/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/R-CMD-check.yaml)
-\<!– badges: end –
+<!-- badges: end -->
 
 Unofficial ggplot2 themes using the colour palette of the MRC HGU logo.
 
