@@ -6,3 +6,4 @@
 * Functions for continuous HGU blues added.
 * Added a `NEWS.md` file to track changes to the package.
 * Created `pkgdown` documentation.
+* Added 'Getting started' vignette.
