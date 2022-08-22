@@ -19,9 +19,9 @@ variety of functions that act as wrappers for the styling functions that
 will automatically assign the correct colour values.
 
 **These palettes were created to align with the colour schemes of the
-MRC and HGU palettes. They were not designed for use on plots and so
-please consider the effect of your palette decisions for colourblind
-people when using.**
+MRC and HGU palettes. However, the original palettes were not designed
+for use on plots and so please consider the effect of your colour
+choices for colourblind people when constructing your plots.**
 
 ## Installation
 
