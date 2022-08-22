@@ -6,8 +6,8 @@ Authors@R: c(
            comment = c(ORCID = "YOUR-ORCID-ID")),
     person("Jesko", "Wagner", , "jesko.wagner@ed.ac.uk", role = c("aut"),
            comment = c(ORCID = "YOUR-ORCID-ID")),
-    person("", "MRC Human Genetics Unit", , , role = c("ctb"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    person("", "MRC Human Genetics Unit", , , role = c("his"),
+           )
     )
 Description: Unofficial ggplot2 themes using the colour palette of the MRC HGU logo.
 License: MIT + file LICENSE

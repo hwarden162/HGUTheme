@@ -7,6 +7,14 @@ authors:
     href: https://jeskowagner.github.io/
   MRC Human Genetics Unit:
     html: "<img src='https://www.ed.ac.uk/sites/default/files/styles/subsite_brand_landscape_breakpoints_theme_uoe_tv_1x/public/ukri-mrc-hgu-web_1.png?itok=vM02u-0B&timestamp=1617262281' width=72>"
+  footer:
+    roles: [cre, fnd]
+    text: "Crafted by"
+  sidebar:
+    roles: [aut, ctb, his]
+    before: "So *who* does the work?"
+    after: "Thanks all!"
+  before: "This package is proudly brought to you by:"
 
 template:
   bootstrap: 5
