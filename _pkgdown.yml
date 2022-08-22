@@ -24,5 +24,3 @@ reference:
     set colours to those used in the MRC HGU colour theme
   contents:
     - starts_with("scale_")
-
-
