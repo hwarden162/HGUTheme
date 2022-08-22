@@ -8,7 +8,6 @@
 <!-- badges: start -->
 
 [![pages-build-deployment](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment)
-[![R-CMD-check](https://github.com/hwarden162/HGUTheme/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 Unofficial ggplot2 themes using the colour palette of the MRC HGU logo.
