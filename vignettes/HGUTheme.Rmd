@@ -249,7 +249,7 @@ ggplot(
   scale_fill_gradient_hgu() # Adding the MRC HGU colour theme gradient
 ```
 
-Although these functions are supplied, mostly out of completeness, it is much clearer to use a theme such as thos supplied by the viridis package
+Although these functions are supplied (mostly out of completeness) it is much clearer to use a theme such as those supplied by the `viridis` package
 
 ```{r, message = FALSE}
 ggplot(
