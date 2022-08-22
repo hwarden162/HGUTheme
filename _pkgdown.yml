@@ -1,7 +1,15 @@
 url: https://hwarden162.github.io/HGUTheme/
+
+authors:
+  Hugh Warden:
+    href: https://hwarden.com
+  Jesko Wagner:
+    href: https://jeskowagner.github.io/
+
 template:
   bootstrap: 5
   bootswatch: lumen
+
 reference:
 - title: "Accessing Hex Codes"
   desc: >

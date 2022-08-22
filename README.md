@@ -4,6 +4,8 @@
 # HGUTheme <img src="man/figures/HGUHex.png" align="right" alt="" width="180" />
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/hwarden162/HGUTheme/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 Unofficial ggplot2 themes using the colour palette of the MRC HGU logo.
@@ -45,7 +47,7 @@ These are then grouped into palettes that are also stored in functions:
 
 ``` r
 hgu_palette()
-#> [1] "#2D2E5F" "#3A88A9" "#54BBD2"
+#> [1] "#2D2E5F" "#3A88A9" "#00BAD2"
 ```
 
 For users’ convenience, various functions have been written that set
