@@ -160,7 +160,7 @@ for text box text and shapes). Here are these three colours in hex:</p>
 <span><span class="co">#&gt; [1] "#3A88A9"</span></span>
 <span><span class="co"># MRC HGU Light Blue</span></span>
 <span><span class="fu"><a href="../reference/hgu_light.html">hgu_light</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "#54BBD2"</span></span></code></pre></div>
+<span><span class="co">#&gt; [1] "#00BAD2"</span></span></code></pre></div>
 <p>These can be useful for quickly colouring <code>ggplot2</code> plots,
 lets make a quick example. A fairly common plot you might make as a
 scientist is a scatter plot with a trend and then putting a linear
@@ -172,18 +172,18 @@ regression line on top. First we can make some fake data</p>
 <span><span class="op">)</span></span>
 <span><span class="va">plot_data</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 100 × 2</span></span></span>
-<span><span class="co">#&gt;        x      y</span></span>
-<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> 0.863 1.27  </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> 0.382 0.394 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> 0.684 0.411 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> 0.764 0.646 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> 0.600 0.547 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> 0.571 0.773 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> 0.148 0.016<span style="text-decoration: underline;">5</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> 0.289 0.351 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> 0.258 0.016<span style="text-decoration: underline;">5</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> 0.405 0.157 </span></span>
+<span><span class="co">#&gt;         x       y</span></span>
+<span><span class="co">#&gt;     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> 0.083<span style="text-decoration: underline;">8</span>  0.089<span style="text-decoration: underline;">5</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> 0.126   0.016<span style="text-decoration: underline;">7</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> 0.645   0.975 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> 0.652   0.392 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> 0.151  -<span style="color: #BB0000;">0.122</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> 0.839   0.471 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> 0.414   0.922 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> 0.512   0.457 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> 0.420   0.526 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> 0.658   0.750 </span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># … with 90 more rows</span></span></span></code></pre></div>
 <p>Then we can make a simple plot that you might make for a
 presentation:</p>
