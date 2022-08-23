@@ -20,8 +20,11 @@ library(tidyverse)
 # HGUTheme
 
 <!-- badges: start -->
-[![pages-build-deployment](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Project Status: Active – The project has reached a stable, usable state and is being actively developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Codecov test coverage](https://codecov.io/gh/hwarden162/HGUTheme/branch/main/graph/badge.svg)](https://app.codecov.io/gh/hwarden162/HGUTheme?branch=main)
+[![pages-build-deployment](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment)
 <!-- badges: end -->
 
 Unofficial ggplot2 themes for using the colour palette of the MRC HGU logo.

@@ -5,9 +5,11 @@
 
 <!-- badges: start -->
 
-[![pages-build-deployment](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment)
+[![License:
+MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Codecov test
 coverage](https://codecov.io/gh/hwarden162/HGUTheme/branch/main/graph/badge.svg)](https://app.codecov.io/gh/hwarden162/HGUTheme?branch=main)
+[![pages-build-deployment](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment)
 <!-- badges: end -->
 
 Unofficial ggplot2 themes for using the colour palette of the MRC HGU
@@ -51,7 +53,7 @@ These are then grouped into palettes that are also stored in functions:
 
 ``` r
 hgu_palette()
-#> [1] "#2D2E5F" "#3A88A9" "#00BAD2"
+#> [1] "#2D2E5F" "#3A88A9" "#54BBD2"
 ```
 
 For users’ convenience, various functions have been written that set
