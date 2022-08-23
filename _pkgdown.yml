@@ -32,3 +32,10 @@ reference:
     set colours to those used in the MRC HGU colour theme
   contents:
     - starts_with("scale_")
+
+home:
+  links:
+  - text: Get Started
+    href: https://hwarden162.github.io/HGUTheme/articles/HGUTheme.html
+  - text: HGUTheme Colours
+    href: https://hwarden162.github.io/HGUTheme/articles/Colours.html
