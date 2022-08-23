@@ -17,7 +17,7 @@ library(HGUTheme)
 library(tidyverse)
 ```
 
-# HGUTheme <img src="man/figures/HGUHex.png" align="right" alt="" width="180" />
+# HGUTheme
 
 <!-- badges: start -->
 [![pages-build-deployment](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment)
