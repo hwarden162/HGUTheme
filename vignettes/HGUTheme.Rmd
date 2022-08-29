@@ -131,88 +131,56 @@ You may not want to go all out with the colours, as has been done here, but this
 
 ## Adding Layers To `ggplot2` Plots
 
-There are a few common cases where you will want to apply certain colour themes to a `ggplot2` plot. To save time, these have been coded and supplied as part of this package. An obvious example of this is a three column bar chart:
+`HGUTheme` also includes multiple functions to quickly colour ggplot2 plots. To demonstrate this, Here is a simple plot:
 
-```{r, message = FALSE}
+```{r}
 plot_data <- tibble(
-  class = c("A", "B", "C"),
-  value = c(0.5, 0.3, 0.2)
-)
-plot_data
-```
-
-```{r, message = FALSE}
-ggplot(
-  data = plot_data,
-  aes(x = class, y = value)
-) +
-  # Adding column plot
-  geom_col() +
-  theme_bw() # Adding a black and white theme
-```
-
-In this case, the colour is not giving any information to the plot and so changing the colours will only be an aesthetic change and not affect the message of the plot. Here we have three different "classes" (represented on the x-axis) that we can colour using the `fill`.
-
-```{r, message = FALSE}
-ggplot(
-  data = plot_data,
-  aes(x = class, y = value, fill = class)
-) +
-  # Adding column plot
-  geom_col() +
-  theme_bw() # Adding a black and white theme
-```
-
-Just adding `class` as a fill aesthetic colours in the plot using the default `ggplot2` colour theme, which is not very fitting in the powerpoint theme and can look rather "garish". We can quickly add the MRC HGU theme using the function `scale_fill_hgu3()` (we also use the `guides` function to remove the colour legend as it is not necessary).
-
-```{r, message = FALSE}
-ggplot(
-  data = plot_data,
-  aes(x = class, y = value, fill = class)
-) +
-  # Adding column plot
-  geom_col() +
-  theme_bw() + # Adding a black and white theme
-  guides(fill = "none") + # Removing the legend for the fill colours
-  scale_fill_hgu3() # Adding the MRC HGU colour theme
-```
-
-The 3 in `scale_fill_hgu3` stands for 3 colour, if you are making a similar plot with 2 colours then the `scale_fill_hgu2` can be used instead
-
-```{r, message = FALSE}
-plot_data <- tibble(
-  class = c("A", "B"),
-  value = c(0.6, 0.4)
+  x = sample(LETTERS[1:10], 1000, replace = TRUE)
 )
 
-ggplot(
-  data = plot_data,
-  aes(x = class, y = value, fill = class)
-) +
-  # Adding column plot
-  geom_col() +
-  theme_bw() + # Adding a black and white theme
-  guides(fill = "none") + # Removing the legend for the fill colours
-  scale_fill_hgu2() # Adding the MRC HGU colour theme
+plot_data %>%
+  ggplot(
+    aes(
+      x = x
+    )
+  ) +
+  geom_bar() +
+  theme_classic()
 ```
 
-By default, this uses the darkest and lightest blues, this can be quickly changed by using similar `scale_fill_hgu2_*_*` functions. For example, to use the mid blue (mid) and light blue (high) as your two colours for the plot, the `scale_fill_hgu2_mid_light` function can be used instead
+Here the colour aesthetic is not doing anything, therefore you may wish to olour them according to the HGU colour theme
 
-```{r, message = FALSE}
-ggplot(
-  data = plot_data,
-  aes(x = class, y = value, fill = class)
-) +
-  # Adding column plot
-  geom_col() +
-  theme_bw() + # Adding a black and white theme
-  guides(fill = "none") + # Removing the legend for the fill colours
-  scale_fill_hgu2_mid_high() # Adding the MRC HGU colour theme
+```{r}
+plot_data %>%
+  ggplot(
+    aes(
+      x = x
+    )
+  ) +
+  geom_bar(fill =  hgu_dark()) +
+  theme_classic()
 ```
 
-**In these examples the colour was only being used for aesthetic purposes. Please be careful if you are conveying information using the colours as this can make very confusing plots, expecially for people with colourblind related conditions.** For example, this scatter plot is not an appropriate use of the colours.
+Or a range of colours in the HGU Blues can be assigned with `scale_fill_hgu()`
 
-```{r, message = FALSE}
+```{r}
+plot_data %>%
+  ggplot(
+    aes(
+      x = x,
+      fill = x
+    )
+  ) +
+  geom_bar() +
+  theme_classic() +
+  scale_fill_hgu()
+```
+
+There are multiple similar functions documented in this website for if you only have two or three levels and want to use the exact colours from the powerpoint.
+
+**In these examples the colour was only being used for aesthetic purposes. Please be careful if you are conveying information using the colours as this can make very confusing plots, expecially for people with colourblind related conditions**. For example, this is scatter plot is not an appropriate use of the colours
+
+```{r}
 plot_data <- tibble(
   x = runif(100),
   y = runif(100),
@@ -234,7 +202,7 @@ ggplot(
 
 It is very hard for anyone to tell the difference between these colours. In the same vein, `HGUTheme` provides gradient functions to be used to colour plots by a continuous variable. Here is an example
 
-```{r, message = FALSE}
+```{r}
 plot_data <- tibble(
   x = rnorm(100000),
   y = rnorm(100000)
@@ -251,7 +219,7 @@ ggplot(
 
 Although these functions are supplied (mostly out of completeness) it is much clearer to use a theme such as those supplied by the `viridis` package
 
-```{r, message = FALSE}
+```{r}
 ggplot(
   data = plot_data,
   mapping = aes(x = x, y = y)
@@ -260,6 +228,9 @@ ggplot(
   theme_classic() + # Setting the theme to classic
   scale_fill_viridis_c() # Adding a colourblind friendly theme from viridis
 ```
+
+
+
 
 
 

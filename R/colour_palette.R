@@ -50,37 +50,49 @@ hgu_palette <- function() {
   )
 }
 
-#' Get HGU Palette of Any Size
+#' Generate The Palette Function For The HGU Blues
 #'
-#' @param n The number of colours to return
-#' @param bias A positive number. Higher values give more widely spaced colors at the high end.
-#' @param space A character string; interpolation in RGB or CIE Lab color spaces.
-#' @param interpolate Use spline or linear interpolation.
-#' @param alpha Logical: should alpha channel (opacity) values be returned? It is an error to give a true value if space is specified.
-#' @param ... Arguments to pass on to `colorRamp`
+#' @param colours Colours to interpolate; by default set as the HGU blues colour palette.
+#' @param bias A positive number; Higher values give more widely spaced colours at the high end.
+#' @param space A character string; Interpolation in RGB or CIE Lab colour space.
+#' @param interpolate Use a spline or linear interpolation.
+#' @param alpha Logical; Should alpha channel (opacity) values be returned?
+#' @param ...
 #'
-#' @return A vector of colours interpolating the MRC HGU blues
-#' @export
+#' @return A function to create discrete colour palettes
 #'
 #' @examples
-#' hgu_palette_n(10)
-hgu_palette_n <- function(
-  n,
+#' palette_func <- hgu_palette_func()
+#' palette_func(5)
+hgu_palette_func_gen <- function(
+  colours = hgu_palette(),
   bias = 1,
   space = "Lab",
   interpolate = "linear",
   alpha = FALSE,
   ...
 ) {
-  palette_func <- colorRampPalette(
-    hgu_palette(),
+  grDevices::colorRampPalette(
+    colors = colours,
     bias = bias,
     space = space,
     interpolate = interpolate,
-    alpha = alpha,
-    ...
+    alpha = alpha
   )
-  return(palette_func(n))
+}
+
+#' Get Any Number Of Colours From The MRC HGU Blue Palette
+#'
+#' @param n The number of colours to return
+#'
+#' @return A character vecctor of colours
+#' @export
+#'
+#' @examples
+#' hgu_palette_n(10)
+hgu_palette_n <- function(n) {
+  hgu_palette_func <- hgu_palette_func_gen()
+  hgu_palette_func(n)
 }
 
 #' Hex Value Of MRC Dark Blue

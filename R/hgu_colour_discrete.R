@@ -1,39 +1,62 @@
-#' Colour Plot With MRC HGU Blue
+#' Colour Ggplot By MRC HGU Blue Colour Palette
 #'
-#' @param n The number of levels of colours
-#' @param bias A positive number. Higher values give more widely spaced colors at the high end.
-#' @param space A character string; interpolation in RGB or CIE Lab color spaces.
-#' @param interpolate Use spline or linear interpolation.
-#' @param alpha Logical: should alpha channel (opacity) values be returned? It is an error to give a true value if space is specified.
-#' @param aesthetics The aesthetic to apply this scale to.
-#' @param breaks Values for beaks (see `ggplot2::scale_colour_manual` for details).
-#' @param na.value Colour to be used for missing values.
+#' @param aesthetics The names of the aesthetics that this scale works with.
+#' @param scale_name The name of the scale that should be used for error messages associated with this scale.
+#' @param palette A palette function that when called with a single integer argument (the number of levels in the scale) returns the values that they should take
+#' @param name The name of the scale. Used as the axis or legend title. If waiver(), the default, the name of the scale is taken from the first mapping used for that aesthetic. If NULL, the legend title will be omitted.
+#' @param breaks Passed to `ggplot2::discrete_scale()`.
+#' @param labels Passed to `ggplot2::discrete_scale()`.
+#' @param limits Passed to `ggplot2::discrete_scale()`.
+#' @param expand Passed to `ggplot2::discrete_scale()`.
+#' @param na.translate Setting to `FALSE` will remove `NA` values from the colour theme.
+#' @param na.value The colour of `NA` values
+#' @param drop Should unused factor levels be omitted from the scale?
+#' @param guide A function used to create a guide or its name.
+#' @param position The position of the scale.
+#' @param super The super class to use for the constructed scale.
 #'
 #' @return A layer that can be added to a ggplot2 object.
 #' @export
 #'
 #' @examples
+#' library(ggplot2)
+#' ggplot(
+#'   data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B", "C"), 20)),
+#'   mapping = aes(x = x, y = y, colour = colour)
+#' ) +
+#'   geom_point() + theme_classic() +
+#'   scale_colour_hgu()
 scale_colour_hgu <- function(
-  n,
-  bias = 1,
-  space = "Lab",
-  interpolate = "linear",
-  alpha = FALSE,
   aesthetics = "colour",
+  scale_name = "MRC_HGU_Blues",
+  palette = hgu_palette_func_gen(),
+  name = ggplot2::waiver(),
   breaks = ggplot2::waiver(),
-  na.value = mrc_grey()
+  labels = ggplot2::waiver(),
+  limits = NULL,
+  expand = ggplot2::waiver(),
+  na.translate = TRUE,
+  na.value = mrc_grey(),
+  drop = TRUE,
+  guide = "legend",
+  position = "left",
+  super = ScaleDiscrete
 ) {
-  scale_colour_manual(
-    values = hgu_palette_n(
-      n,
-      bias = bias,
-      space = space,
-      interpolate = interpolate,
-      alpha = alpha,
-    ),
+  ggplot2::discrete_scale(
     aesthetics = aesthetics,
+    scale_name = scale_name,
+    palette = palette,
+    name = name,
     breaks = breaks,
-    na.value = na.value
+    labels = labels,
+    limits = limits,
+    expand = expand,
+    na.translate = na.translate,
+    na.value = na.value,
+    drop = drop,
+    guide = guide,
+    position = position,
+    super = super
   )
 }
 

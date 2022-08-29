@@ -40,6 +40,12 @@
     <loc>https://hwarden162.github.io/HGUTheme/reference/hgu_palette.html</loc>
   </url>
   <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/hgu_palette_func_gen.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/hgu_palette_n.html</loc>
+  </url>
+  <url>
     <loc>https://hwarden162.github.io/HGUTheme/reference/index.html</loc>
   </url>
   <url>
@@ -73,6 +79,9 @@
     <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_gradient_hgu.html</loc>
   </url>
   <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_hgu.html</loc>
+  </url>
+  <url>
     <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_hgu2.html</loc>
   </url>
   <url>
@@ -92,6 +101,9 @@
   </url>
   <url>
     <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_gradient_hgu.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_hgu.html</loc>
   </url>
   <url>
     <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_hgu2.html</loc>
