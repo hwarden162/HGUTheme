@@ -15,3 +15,18 @@ test_that("correct colours are returned", {
 test_that("correct colour palettes are returned", {
   expect_equal(hgu_palette(), c(hgu_dark(), hgu_mid(), hgu_light()))
 })
+
+test_that("correct palette generating function created", {
+  colour_func <- hgu_palette_func_gen()
+  expect_equal(
+    colour_func(5),
+    c("#2C2D5F",  "#375983", "#3987A9", "#2CA0BD", "#00B9D2")
+  )
+})
+
+test_that("hgu palette n works", {
+  expect_equal(
+    hgu_palette_n(5),
+    c("#2C2D5F",  "#375983", "#3987A9", "#2CA0BD", "#00B9D2")
+  )
+})
