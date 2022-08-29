@@ -1,3 +1,18 @@
+#' Colour Plot With MRC HGU Blue
+#'
+#' @param n The number of levels of colours
+#' @param bias A positive number. Higher values give more widely spaced colors at the high end.
+#' @param space A character string; interpolation in RGB or CIE Lab color spaces.
+#' @param interpolate Use spline or linear interpolation.
+#' @param alpha Logical: should alpha channel (opacity) values be returned? It is an error to give a true value if space is specified.
+#' @param aesthetics The aesthetic to apply this scale to.
+#' @param breaks Values for beaks (see `ggplot2::scale_colour_manual` for details).
+#' @param na.value Colour to be used for missing values.
+#'
+#' @return A layer that can be added to a ggplot2 object.
+#' @export
+#'
+#' @examples
 scale_colour_hgu <- function(
   n,
   bias = 1,
