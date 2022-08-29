@@ -7,6 +7,9 @@
 
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Project Status: Active – The project has reached a stable, usable
+state and is being actively
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
 [![Codecov test
 coverage](https://codecov.io/gh/hwarden162/HGUTheme/branch/main/graph/badge.svg)](https://app.codecov.io/gh/hwarden162/HGUTheme?branch=main)
 [![pages-build-deployment](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment)
@@ -53,7 +56,7 @@ These are then grouped into palettes that are also stored in functions:
 
 ``` r
 hgu_palette()
-#> [1] "#2D2E5F" "#3A88A9" "#54BBD2"
+#> [1] "#2D2E5F" "#3A88A9" "#00BAD2"
 ```
 
 For users’ convenience, various functions have been written that set
@@ -92,7 +95,7 @@ plot_data %>%
   ggplot(aes(x = class, y = value, fill = class)) +
   geom_col() +
   theme_classic() +
-  scale_fill_hgu3()
+  scale_fill_hgu()
 ```
 
 <img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
@@ -110,8 +113,8 @@ Taken from the MRC HGU Powerpoint template:
 
 Taken from the MRC Powerpoint template:
 
--   ![\#2E2C5E](https://via.placeholder.com/15/2E2C5E/2E2C5E.png) Dark
-    blue: `#2E2C5E`
+-   ![\#2E2C5E](https://via.placeholder.com/15/2E2C5E/2E2C5E) Dark Blue:
+    `#2E2C5E`
 -   ![\#102F83](https://via.placeholder.com/15/102F83/102F83.png)
     Darkish blue: `#102F83`
 -   ![\#305CEF](https://via.placeholder.com/15/305CEF/305CEF.png) Mid
