@@ -50,6 +50,39 @@ hgu_palette <- function() {
   )
 }
 
+#' Get HGU Palette of Any Size
+#'
+#' @param n The number of colours to return
+#' @param bias A positive number. Higher values give more widely spaced colors at the high end.
+#' @param space A character string; interpolation in RGB or CIE Lab color spaces.
+#' @param interpolate Use spline or linear interpolation.
+#' @param alpha Logical: should alpha channel (opacity) values be returned? It is an error to give a true value if space is specified.
+#' @param ... Arguments to pass on to `colorRamp`
+#'
+#' @return A vector of colours interpolating the MRC HGU blues
+#' @export
+#'
+#' @examples
+#' hgu_palette_n(10)
+hgu_palette_n <- function(
+  n,
+  bias = 1,
+  space = "Lab",
+  interpolate = "linear",
+  alpha = FALSE,
+  ...
+) {
+  palette_func <- colorRampPalette(
+    hgu_palette(),
+    bias = bias,
+    space = space,
+    interpolate = interpolate,
+    alpha = alpha,
+    ...
+  )
+  return(palette_func(n))
+}
+
 #' Hex Value Of MRC Dark Blue
 #'
 #' @return A character string of the hex value of the MRC dark blue.

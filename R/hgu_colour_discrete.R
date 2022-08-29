@@ -1,3 +1,27 @@
+scale_colour_hgu <- function(
+  n,
+  bias = 1,
+  space = "Lab",
+  interpolate = "linear",
+  alpha = FALSE,
+  aesthetics = "colour",
+  breaks = ggplot2::waiver(),
+  na.value = mrc_grey()
+) {
+  scale_colour_manual(
+    values = hgu_palette_n(
+      n,
+      bias = bias,
+      space = space,
+      interpolate = interpolate,
+      alpha = alpha,
+    ),
+    aesthetics = aesthetics,
+    breaks = breaks,
+    na.value = na.value
+  )
+}
+
 #' Assign Discrete HGU 3 Colour Palette
 #'
 #' @param ... Arguments to be passed on.
