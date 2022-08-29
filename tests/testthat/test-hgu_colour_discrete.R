@@ -62,4 +62,8 @@ test_that("colour_discrete functions return correct ggproto object", {
       na.value = mrc_grey()
     )
   )
+
+  layer <- scale_colour_hgu()
+
+  expect_equal(layer$aesthetics, "colour")
 })

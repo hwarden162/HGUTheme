@@ -40,7 +40,7 @@ scale_fill_hgu <- function(
     drop = TRUE,
     guide = "legend",
     position = "left",
-    super = ScaleDiscrete
+    super = ggplot2::ScaleDiscrete
 ) {
   ggplot2::discrete_scale(
     aesthetics = aesthetics,

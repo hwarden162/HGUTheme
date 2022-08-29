@@ -62,4 +62,8 @@ test_that("fill_discrete gives the correct ggproto object", {
     )
   )
 
+  layer <- scale_fill_hgu()
+
+  expect_equal(layer$aesthetics, "fill")
+
 })
