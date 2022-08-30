@@ -18,7 +18,7 @@ scale_fill_hgu(
   drop = TRUE,
   guide = "legend",
   position = "left",
-  super = ScaleDiscrete
+  super = ggplot2::ScaleDiscrete
 )
 }
 \arguments{
