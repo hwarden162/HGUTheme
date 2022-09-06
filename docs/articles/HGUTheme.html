@@ -102,7 +102,8 @@ choosing your colour themes. Many packages are available to help with
 this, including <a href="https://github.com/sjmgarnier/viridis" class="external-link">viridis</a> and <a href="https://ubc-mds.github.io/ColourblindR/" class="external-link">ColourblindR</a> as well
 as many more. We also highly recommend <a href="https://github.com/clauswilke/colorblindr" class="external-link">colorblindr</a> that
 contains functions that allow you to simulate many forms of
-colourblindness to ensure accessibility.</strong></p>
+colourblindness to ensure accessibility. More information on making
+colour blind friendly scientific plots can be found <a href="https://www.ascb.org/science-news/how-to-make-scientific-figures-accessible-to-readers-with-color-blindness/" class="external-link">here</a>.</strong></p>
 <div class="section level2">
 <h2 id="accessing-colour-hex-codes">Accessing Colour Hex Codes<a class="anchor" aria-label="anchor" href="#accessing-colour-hex-codes"></a>
 </h2>
@@ -179,18 +180,18 @@ regression line on top. First we can make some fake data</p>
 <span><span class="op">)</span></span>
 <span><span class="va">plot_data</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 100 × 2</span></span></span>
-<span><span class="co">#&gt;         x       y</span></span>
-<span><span class="co">#&gt;     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> 0.775   0.697 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> 0.950   0.936 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> 0.094<span style="text-decoration: underline;">3</span>  0.177 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> 0.719   1.06  </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> 0.119   0.101 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> 0.025<span style="text-decoration: underline;">4</span> -<span style="color: #BB0000;">0.035</span><span style="color: #BB0000; text-decoration: underline;">5</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> 0.759   0.891 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> 0.426   0.087<span style="text-decoration: underline;">8</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> 0.090<span style="text-decoration: underline;">8</span>  0.072<span style="text-decoration: underline;">7</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> 0.271   0.298 </span></span>
+<span><span class="co">#&gt;        x       y</span></span>
+<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> 0.488  0.292 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> 0.140 -<span style="color: #BB0000;">0.113</span> </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> 0.623  0.329 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> 0.992  1.21  </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> 0.206  0.301 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> 0.113  0.270 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> 0.121  0.036<span style="text-decoration: underline;">9</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> 0.780  1.08  </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> 0.203  0.513 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> 0.348  0.039<span style="text-decoration: underline;">9</span></span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># … with 90 more rows</span></span></span></code></pre></div>
 <p>Then we can make a simple plot that you might make for a
 presentation:</p>
