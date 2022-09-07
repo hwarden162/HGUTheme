@@ -51,6 +51,7 @@
 <li class="nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
+    <a class="dropdown-item" href="../articles/ColourBlind.html">Colour Blind Friendly Plotting</a>
     <a class="dropdown-item" href="../articles/Colours.html">Colours</a>
   </div>
 </li>
@@ -90,12 +91,12 @@
 
     
     
-<p><code>HGUThemes</code> was made to include a lot of shortcuts to
-allow you to quickly format your <code>ggplot2</code> plots to use
-colours present in the MRC HGU Powerpoint colour theme. There are
-currently two main ways of doing this (i) use functions to quickly
-access colour hex codes and (ii) use functions to quickly add layers
-that automatically colour your plots.</p>
+<p><code>HGUTheme</code> was made to include a lot of shortcuts to allow
+you to quickly format your <code>ggplot2</code> plots to use colours
+present in the MRC HGU Powerpoint colour theme. There are currently two
+main ways of doing this (i) use functions to quickly access colour hex
+codes and (ii) use functions to quickly add layers that automatically
+colour your plots.</p>
 <p><strong>Please be conscious about making your plots accessible to
 people who suffer from colourblindness and related conditions when
 choosing your colour themes. Many packages are available to help with
@@ -180,18 +181,18 @@ regression line on top. First we can make some fake data</p>
 <span><span class="op">)</span></span>
 <span><span class="va">plot_data</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 100 × 2</span></span></span>
-<span><span class="co">#&gt;        x       y</span></span>
-<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> 0.488  0.292 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> 0.140 -<span style="color: #BB0000;">0.113</span> </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> 0.623  0.329 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> 0.992  1.21  </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> 0.206  0.301 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> 0.113  0.270 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> 0.121  0.036<span style="text-decoration: underline;">9</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> 0.780  1.08  </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> 0.203  0.513 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> 0.348  0.039<span style="text-decoration: underline;">9</span></span></span>
+<span><span class="co">#&gt;        x      y</span></span>
+<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>  <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> 0.432 0.268 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> 0.145 0.326 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> 0.192 0.035<span style="text-decoration: underline;">7</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> 0.874 0.961 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> 0.268 0.176 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> 0.352 0.545 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> 0.241 0.095<span style="text-decoration: underline;">5</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> 0.523 0.830 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> 0.938 0.925 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> 0.961 0.802 </span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># … with 90 more rows</span></span></span></code></pre></div>
 <p>Then we can make a simple plot that you might make for a
 presentation:</p>

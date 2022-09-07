@@ -2,9 +2,10 @@ pandoc: 2.17.1.1
 pkgdown: 2.0.6
 pkgdown_sha: ~
 articles:
+  ColourBlind: ColourBlind.html
   Colours: Colours.html
   HGUTheme: HGUTheme.html
-last_built: 2022-09-06T19:39Z
+last_built: 2022-09-07T12:54Z
 urls:
   reference: https://hwarden162.github.io/HGUTheme/reference
   article: https://hwarden162.github.io/HGUTheme/articles

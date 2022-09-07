@@ -1,0 +1,17 @@
+---
+title: "Colour Blind Friendly Plotting"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{ColourBlind}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+**This is not a definitive guide to colour blind friendly plotting, just a link to some resources that we have found useful.**
