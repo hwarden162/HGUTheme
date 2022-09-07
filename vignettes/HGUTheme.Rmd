@@ -18,7 +18,7 @@ library(HGUTheme)
 library(tidyverse)
 ```
 
-`HGUThemes` was made to include a lot of shortcuts to allow you to quickly format your `ggplot2` plots to use colours present in the MRC HGU Powerpoint colour theme. There are currently two main ways of doing this (i) use functions to quickly access colour hex codes and (ii) use functions to quickly add layers that automatically colour your plots.
+`HGUTheme` was made to include a lot of shortcuts to allow you to quickly format your `ggplot2` plots to use colours present in the MRC HGU Powerpoint colour theme. There are currently two main ways of doing this (i) use functions to quickly access colour hex codes and (ii) use functions to quickly add layers that automatically colour your plots.
 
 **Please be conscious about making your plots accessible to people who suffer from colourblindness and related conditions when choosing your colour themes. Many packages are available to help with this, including [viridis](https://github.com/sjmgarnier/viridis) and [ColourblindR](https://ubc-mds.github.io/ColourblindR/) as well as many more. We also highly recommend [colorblindr](https://github.com/clauswilke/colorblindr) that contains functions that allow you to simulate many forms of colourblindness to ensure accessibility. More information on making colour blind friendly scientific plots can be found [here](https://www.ascb.org/science-news/how-to-make-scientific-figures-accessible-to-readers-with-color-blindness/).**
 
