@@ -97,14 +97,13 @@ present in the MRC HGU Powerpoint colour theme. There are currently two
 main ways of doing this (i) use functions to quickly access colour hex
 codes and (ii) use functions to quickly add layers that automatically
 colour your plots.</p>
-<p><strong>Please be conscious about making your plots accessible to
-people who suffer from colourblindness and related conditions when
-choosing your colour themes. Many packages are available to help with
-this, including <a href="https://github.com/sjmgarnier/viridis" class="external-link">viridis</a> and <a href="https://ubc-mds.github.io/ColourblindR/" class="external-link">ColourblindR</a> as well
-as many more. We also highly recommend <a href="https://github.com/clauswilke/colorblindr" class="external-link">colorblindr</a> that
-contains functions that allow you to simulate many forms of
-colourblindness to ensure accessibility. More information on making
-colour blind friendly scientific plots can be found <a href="https://www.ascb.org/science-news/how-to-make-scientific-figures-accessible-to-readers-with-color-blindness/" class="external-link">here</a>.</strong></p>
+<p><strong>These palettes were created to align with the colour schemes
+of the MRC and HGU palettes. However, the original palettes were not
+designed for use on plots and so please consider the effect of your
+colour choices for colourblind people when constructing your plots. More
+information on making your scientific plots colourblind friendly can be
+found in the <a href="https://hwarden162.github.io/HGUTheme/articles/ColourBlind.html">Colour
+Blind Friendly Plotting</a> section.</strong></p>
 <div class="section level2">
 <h2 id="accessing-colour-hex-codes">Accessing Colour Hex Codes<a class="anchor" aria-label="anchor" href="#accessing-colour-hex-codes"></a>
 </h2>
@@ -181,18 +180,18 @@ regression line on top. First we can make some fake data</p>
 <span><span class="op">)</span></span>
 <span><span class="va">plot_data</span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 100 × 2</span></span></span>
-<span><span class="co">#&gt;         x     y</span></span>
-<span><span class="co">#&gt;     <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> 0.216  0.430</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> 0.651  0.796</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> 0.196  0.288</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> 0.013<span style="text-decoration: underline;">4</span> 0.142</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> 0.941  0.789</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> 0.942  1.01 </span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> 0.563  0.407</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> 0.399  0.520</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> 0.802  0.630</span></span>
-<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> 0.724  0.498</span></span>
+<span><span class="co">#&gt;        x       y</span></span>
+<span><span class="co">#&gt;    <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>   <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 1</span> 0.802  0.704 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 2</span> 0.700  0.548 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 3</span> 0.327  0.326 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 4</span> 0.706  0.834 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 5</span> 0.882  0.927 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 6</span> 0.243 -<span style="color: #BB0000;">0.021</span><span style="color: #BB0000; text-decoration: underline;">8</span></span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 7</span> 0.759  0.514 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 8</span> 0.904  1.07  </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;"> 9</span> 0.226  0.321 </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">10</span> 0.262  0.370 </span></span>
 <span><span class="co">#&gt; <span style="color: #949494;"># … with 90 more rows</span></span></span></code></pre></div>
 <p>Then we can make a simple plot that you might make for a
 presentation:</p>

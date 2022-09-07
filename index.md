@@ -32,8 +32,9 @@ MRC and HGU palettes. However, the original palettes were not designed
 for use on plots and so please consider the effect of your colour
 choices for colourblind people when constructing your plots. More
 information on making your scientific plots colourblind friendly can be
-found
-[here](https://www.ascb.org/science-news/how-to-make-scientific-figures-accessible-to-readers-with-color-blindness/).**
+found in the [Colour Blind Friendly
+Plotting](https://hwarden162.github.io/HGUTheme/articles/ColourBlind.html)
+section.**
 
 ## Installation
 
