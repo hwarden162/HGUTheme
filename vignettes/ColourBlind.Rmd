@@ -10,8 +10,75 @@ vignette: >
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
+  comment = "#>",
+  echo = FALSE
 )
+library(tidyverse)
+library(HGUTheme)
+library(colorblindr)
 ```
 
 There are many different forms of colour blindness and in many situations it is impossible to make your plots completely suitable for everyone. However, there are many simple things that can be done to drastically increase the accessibility of your plots for people who suffer from colour blindness. Increasing the accessibility of your work makes life easier for everyone, making your plots more readable even to people who do not suffer from colour blindness.
+
+Here is an example of a basic plot with `HGUTheme`
+
+```{r}
+plot_data <- tibble(
+  class = c("A", "B", "C"),
+  prob = c(0.5, 0.3, 0.2)
+)
+
+plot <- plot_data %>%
+  ggplot(
+    aes(
+      x = class,
+      y = prob,
+      fill = class
+    )
+  ) +
+  geom_col() +
+  theme_classic() +
+  scale_fill_hgu()
+
+plot
+```
+
+Here is what this plot would look like to people who suffer from various forms of colour blindness.
+
+```{r}
+cvd_grid(plot)
+```
+
+
+This might not look too bad, but lets compare it to another plot with a palette designed for people who suffer from colour blindness.
+
+```{r}
+plot <- plot_data %>%
+  ggplot(
+    aes(
+      x = class,
+      y = prob,
+      fill = class
+    )
+  ) +
+  geom_col() +
+  theme_classic() +
+  scale_fill_viridis_d()
+
+plot
+
+cvd_grid(plot)
+```
+
+This might not fit in aesthetically the same way with the PowerPoint theme, but it is obviously much better for people who suffer from colour blindness.
+
+*If you wish to recreate these colourblind representations yourself, they were made using the `colorblindr` package, found [here](https://github.com/clauswilke/colorblindr).*
+
+To find out more about colour blindness then here are some resources that we and our colleagues find useful:
+
+* [How to make figures and presentations that are friendly to Colorblind people](https://jfly.uni-koeln.de/color/)
+* [Common pitfalls of color use](https://clauswilke.com/dataviz/color-pitfalls.html)
+* [A very in depth document about the use of colour in coding information
+'Color Use in Air Traffic Control System Displays'](https://www.tc.faa.gov/its/worldpac/standards/faa-hf-std-010.pdf)
+
+
