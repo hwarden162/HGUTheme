@@ -4,7 +4,7 @@ Version: 0.0.1
 Authors@R: c(
     person("Hugh", "Warden", , "h.b.warden@sms.ed.ac.uk", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-4308-7316")), 
-    person("Jesko", "Wagner", , "jesko.wagner@ed.ac.uk", role = c("aut"),
+    person("Jesko", "Wagner", , "jesko.wagner@ed.ac.uk", role = c("ctb"),
            comment = c(ORCID = "0000-0001-9805-7192")),
     person("MRC", "HGU", , , role = c("his"),
            )
