@@ -1,5 +1,5 @@
 Package: HGUTheme
-Title: Helper functions for HGU colour theme
+Title: Colour Your Plots With the MRC HGU Colour Theme
 Version: 0.0.1
 Authors@R: c(
     person("Hugh", "Warden", , "h.b.warden@sms.ed.ac.uk", role = c("aut", "cre"),
@@ -9,7 +9,11 @@ Authors@R: c(
     person("MRC", "HGU", , , role = c("his"),
            )
     )
-Description: Unofficial helper functions for HGU colour theme
+Description: Functions to aid creating plots and images in R that are consistent
+    with the colour theme as set out in the MRC HGU PowerPoint template. This 
+    includes functions to access the HEX codes of the different colours, generate
+    colour palettes from interpolations of these colours and automatically colour
+    plots made by the `ggplot2` package.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
