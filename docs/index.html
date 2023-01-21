@@ -43,17 +43,7 @@
     <div id="navbar" class="collapse navbar-collapse ms-3">
       <ul class="navbar-nav me-auto">
 <li class="nav-item">
-  <a class="nav-link" href="articles/HGUTheme.html">Get started</a>
-</li>
-<li class="nav-item">
   <a class="nav-link" href="reference/index.html">Reference</a>
-</li>
-<li class="nav-item dropdown">
-  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
-  <div class="dropdown-menu" aria-labelledby="dropdown-articles">
-    <a class="dropdown-item" href="articles/ColourBlind.html">Colour Blind Friendly Plotting</a>
-    <a class="dropdown-item" href="articles/Colours.html">Colours</a>
-  </div>
 </li>
 <li class="nav-item">
   <a class="nav-link" href="news/index.html">Changelog</a>
@@ -94,46 +84,6 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"hwarden162/HGUTheme"</span><span class="op">)</span></span></code></pre></div>
-</div>
-<div class="section level2">
-<h2 id="quick-use-guide">Quick Use Guide<a class="anchor" aria-label="anchor" href="#quick-use-guide"></a>
-</h2>
-<p>Each colour has been assigned a function that will return a character string with the corresponding HEX code. For example:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/hgu_dark.html">hgu_dark</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "#2D2E5F"</span></span></code></pre></div>
-<p>These are then grouped into palettes that are also stored in functions:</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="reference/hgu_palette.html">hgu_palette</a></span><span class="op">(</span><span class="op">)</span></span>
-<span><span class="co">#&gt; [1] "#2D2E5F" "#3A88A9" "#00BAD2"</span></span></code></pre></div>
-<p>For users’ convenience, various functions have been written that set these colour values</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">plot_data</span> <span class="op">&lt;-</span> <span class="fu">tibble</span><span class="op">(</span></span>
-<span>  class <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span><span class="op">)</span>,</span>
-<span>  value <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0.5</span>,<span class="fl">0.3</span>,<span class="fl">0.2</span><span class="op">)</span></span>
-<span><span class="op">)</span></span>
-<span><span class="va">plot_data</span></span>
-<span><span class="co">#&gt; # A tibble: 3 × 2</span></span>
-<span><span class="co">#&gt;   class value</span></span>
-<span><span class="co">#&gt;   &lt;chr&gt; &lt;dbl&gt;</span></span>
-<span><span class="co">#&gt; 1 A       0.5</span></span>
-<span><span class="co">#&gt; 2 B       0.3</span></span>
-<span><span class="co">#&gt; 3 C       0.2</span></span></code></pre></div>
-<p>A basic plot of this data would look like this</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">plot_data</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">class</span>, y <span class="op">=</span> <span class="va">value</span>, fill <span class="op">=</span> <span class="va">class</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">geom_col</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">theme_classic</span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-5-1.png" width="100%"></p>
-<p>A layer can be added to change the fill of the boxes to match that of the MRC HGU powerpoint theme</p>
-<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">plot_data</span> <span class="op">%&gt;%</span></span>
-<span>  <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">class</span>, y <span class="op">=</span> <span class="va">value</span>, fill <span class="op">=</span> <span class="va">class</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">geom_col</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu">theme_classic</span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="reference/scale_fill_hgu.html">scale_fill_hgu</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-6-1.png" width="100%"></p>
 </div>
 <div class="section level2">
 <h2 id="colour-codes">Colour Codes<a class="anchor" aria-label="anchor" href="#colour-codes"></a>
@@ -180,9 +130,6 @@
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
 <li><a href="https://github.com/hwarden162/HGUTheme/" class="external-link">Browse source code</a></li>
-<li><a href="https://hwarden162.github.io/HGUTheme/articles/HGUTheme.html">Get Started</a></li>
-<li><a href="https://hwarden162.github.io/HGUTheme/articles/Colours.html">HGUTheme Colours</a></li>
-<li><a href="https://hwarden162.github.io/HGUTheme/articles/ColourBlind.html">Colour Blind Friendly Plotting</a></li>
 </ul>
 </div>
 

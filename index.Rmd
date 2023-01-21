@@ -42,49 +42,6 @@ You can install the development version of HGUTheme from [GitHub](https://github
 devtools::install_github("hwarden162/HGUTheme")
 ```
 
-## Quick Use Guide
-
-Each colour has been assigned a function that will return a character string with the corresponding HEX code. For example:
-
-```{r}
-hgu_dark()
-```
-
-These are then grouped into palettes that are also stored in functions:
-
-```{r}
-hgu_palette()
-```
-
-For users' convenience, various functions have been written that set these colour values
-
-```{r}
-plot_data <- tibble(
-  class = c("A", "B", "C"),
-  value = c(0.5,0.3,0.2)
-)
-plot_data
-```
-
-A basic plot of this data would look like this
-
-```{r}
-plot_data %>%
-  ggplot(aes(x = class, y = value, fill = class)) +
-  geom_col() +
-  theme_classic()
-```
-
-A layer can be added to change the fill of the boxes to match that of the MRC HGU powerpoint theme
-
-```{r}
-plot_data %>%
-  ggplot(aes(x = class, y = value, fill = class)) +
-  geom_col() +
-  theme_classic() +
-  scale_fill_hgu()
-```
-
 ## Colour Codes
 Taken from the MRC HGU Powerpoint template:
 

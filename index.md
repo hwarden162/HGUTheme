@@ -46,64 +46,6 @@ You can install the development version of HGUTheme from
 devtools::install_github("hwarden162/HGUTheme")
 ```
 
-## Quick Use Guide
-
-Each colour has been assigned a function that will return a character
-string with the corresponding HEX code. For example:
-
-``` r
-hgu_dark()
-#> [1] "#2D2E5F"
-```
-
-These are then grouped into palettes that are also stored in functions:
-
-``` r
-hgu_palette()
-#> [1] "#2D2E5F" "#3A88A9" "#00BAD2"
-```
-
-For users’ convenience, various functions have been written that set
-these colour values
-
-``` r
-plot_data <- tibble(
-  class = c("A", "B", "C"),
-  value = c(0.5,0.3,0.2)
-)
-plot_data
-#> # A tibble: 3 × 2
-#>   class value
-#>   <chr> <dbl>
-#> 1 A       0.5
-#> 2 B       0.3
-#> 3 C       0.2
-```
-
-A basic plot of this data would look like this
-
-``` r
-plot_data %>%
-  ggplot(aes(x = class, y = value, fill = class)) +
-  geom_col() +
-  theme_classic()
-```
-
-<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
-
-A layer can be added to change the fill of the boxes to match that of
-the MRC HGU powerpoint theme
-
-``` r
-plot_data %>%
-  ggplot(aes(x = class, y = value, fill = class)) +
-  geom_col() +
-  theme_classic() +
-  scale_fill_hgu()
-```
-
-<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
-
 ## Colour Codes
 
 Taken from the MRC HGU Powerpoint template:
