@@ -1,4 +1,4 @@
-.onLoad <- function(libname, pkgname) {
+.onAttach <- function(libname, pkgname) {
   packageStartupMessage(
     "--HGUTheme-----------------------------------------------------------------\n",
     "Please be mindful of colourblind users when colouring your plots.\n",
