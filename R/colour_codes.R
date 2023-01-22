@@ -54,3 +54,21 @@ ukri_mid_blue <- function() {
 ukri_light_blue <- function() {
   "#00BAD2"
 }
+
+#' HEX Code of the UKRI Light Blue
+#'
+#' Access the HEX code of the orange used by the UKRI.
+#'
+#' @return The HEX code of the UKRI orange.
+#' @export
+#'
+#' @examples
+#'
+#' barplot(
+#'   1:3,
+#'   col = ukri_orange()
+#' )
+#'
+ukri_orange <- function() {
+  "#F2BC44"
+}

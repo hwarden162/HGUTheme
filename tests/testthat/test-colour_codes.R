@@ -12,3 +12,7 @@ test_that("UKRI mid blue returned", {
 test_that("UKRI light blue returned", {
   expect_equal(ukri_light_blue(), "#00BAD2")
 })
+
+test_that("UKRI orange returned", {
+  expect_equal(ukri_orange(), "#F2BC44")
+})
