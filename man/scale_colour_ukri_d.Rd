@@ -14,7 +14,7 @@ scale_colour_ukri_d(
   limits = NULL,
   expand = ggplot2::waiver(),
   na.translate = TRUE,
-  na.value = "#DADADA",
+  na.value = cruk_grey(),
   drop = TRUE,
   guide = "legend",
   position = "left",
