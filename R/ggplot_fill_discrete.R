@@ -1,7 +1,7 @@
 
 # UKRI Colours ------------------------------------------------------------
 
-#' UKRI Blues Fill Scales
+#' UKRI Blues Fill Scales (Discrete)
 #'
 #' A layer that can be added to `ggplot2` plots to change the fill aesthetic
 #' to interpolate values from the blues used in the UKRI logo.
@@ -36,9 +36,9 @@
 #'   ggplot(data = data.frame(x = LETTERS[1:5], y = runif(5))) +
 #'   aes(x = x, y = y, fill = x) +
 #'   geom_col() + theme_classic() +
-#'   scale_fill_ukri()
+#'   scale_fill_ukri_d()
 #'
-scale_fill_ukri <- function(
+scale_fill_ukri_d <- function(
     aesthetics = "fill",
     scale_name = "UKRI_Blues",
     palette = ukri_blues_palette_func_gen(),
