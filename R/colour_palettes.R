@@ -39,10 +39,6 @@ ukri_blues <- function() {
 #'
 #' @return A function to generate palettes that interpolate the UKRI blues.
 #'
-#' @examples
-#'
-#' func_gen <- ukri_blues_palette_func_gen()
-#'
 ukri_blues_palette_func_gen <- function(
     colours = ukri_blues(),
     bias = 1,

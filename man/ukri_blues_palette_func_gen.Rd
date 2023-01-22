@@ -37,8 +37,3 @@ A function to generate palettes that interpolate the UKRI blues.
 \description{
 Palette Generating Function For UKRI Blues
 }
-\examples{
-
-func_gen <- ukri_blues_palette_func_gen()
-
-}
