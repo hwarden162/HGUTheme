@@ -65,10 +65,14 @@ to interpolate values from the blues used in the UKRI logo.
 }
 \examples{
 
-  library(ggplot2)
-  ggplot(data = data.frame(x = LETTERS[1:5], y = runif(5))) +
+tibble(
+x = LETTERS[1:3],
+y = c(5, 3, 2)
+) \%>\%
+  ggplot() +
   aes(x = x, y = y, fill = x) +
-  geom_col() + theme_classic() +
+  geom_col() +
+  theme_classic() +
   scale_fill_ukri_d()
 
 }

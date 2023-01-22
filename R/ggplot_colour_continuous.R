@@ -11,7 +11,8 @@
 #' @param low Colour for the low end of the gradient.
 #' @param mid Colour for the midpoit of the gradient.
 #' @param high Colour for the high end of the gradient.
-#' @param midpoint The midpoint (in data value) of the diverging scale.
+#' @param midpoint The midpoint (in data value) of the diverging scale. Diverging
+#'     scale only used if the midpoint is not equal to `NULL`, which is the default.
 #' @param space Colour space in which to calculate the gradient.
 #' @param na.value Colour to be used for missing values.
 #' @param guide Type of legend.
