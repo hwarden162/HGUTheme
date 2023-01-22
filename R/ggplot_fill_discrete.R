@@ -48,7 +48,7 @@ scale_fill_ukri_d <- function(
     limits = NULL,
     expand = ggplot2::waiver(),
     na.translate = TRUE,
-    na.value = "#DADADA",
+    na.value = cruk_grey(),
     drop = TRUE,
     guide = "legend",
     position = "left",
