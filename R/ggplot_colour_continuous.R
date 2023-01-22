@@ -28,7 +28,7 @@ scale_colour_ukri_c <- function(
     high = ukri_light_blue(),
     midpoint = NULL,
     space = "Lab",
-    na.value = mrc_grey(),
+    na.value = cruk_grey(),
     guide = "colourbar",
     aesthetics = "colour"
 ) {
