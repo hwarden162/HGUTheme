@@ -43,3 +43,30 @@ A layer that can be added to a ggplot2 object.
 \description{
 UKRI Blues Fill Scales (Continuous)
 }
+\examples{
+
+library(ggplot2)
+
+ggplot(
+  data.frame(
+    x = rnorm(10000),
+    y = rnorm(10000)
+  )
+) +
+  aes(x = x, y = y) +
+  geom_hex() + theme_classic() +
+  guides(fill = "none") + coord_equal() +
+  scale_fill_ukri_c()
+
+ggplot(
+  data.frame(
+    x = rnorm(10000),
+    y = rnorm(10000)
+  )
+) +
+  aes(x = x, y = y) +
+  geom_hex() + theme_classic() +
+  guides(fill = "none") + coord_equal() +
+  scale_fill_ukri_c(midpoint = 40)
+
+}

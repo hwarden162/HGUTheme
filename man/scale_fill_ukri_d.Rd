@@ -63,3 +63,19 @@ A layer that can be added to a \code{ggplot2} object.
 A layer that can be added to \code{ggplot2} plots to change the fill aesthetic
 to interpolate values from the blues used in the UKRI logo.
 }
+\examples{
+
+library(ggplot2)
+
+ggplot(
+  data.frame(
+    x = LETTERS[1:5],
+    y = 5:1
+  )
+) +
+  aes(x = x, y = y, fill = x) +
+  geom_col() + theme_classic() +
+  guides(fill = "none") + coord_equal() +
+  scale_fill_ukri_d()
+
+}

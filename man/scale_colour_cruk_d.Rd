@@ -65,12 +65,19 @@ to interpolate values from the colours used in the CRUK logo.
 }
 \examples{
 
-  library(ggplot2)
-  ggplot(
-    data = data.frame(x = runif(60), y = runif(60), colour = rep(c("A", "B", "C"), 20)),
-    mapping = aes(x = x, y = y, colour = colour)
-  ) +
-    geom_point() + theme_classic() +
-    scale_colour_cruk_d()
+library(ggplot2)
+
+ggplot(
+  data.frame(
+    x = runif(800),
+    y = runif(800),
+    col = sample(LETTERS[1:3], 800, replace = TRUE)
+  )
+) +
+  aes(x = x, y = y, colour = col) +
+  geom_point() + theme_classic() +
+  guides(colour = "none") +
+  coord_equal() +
+  scale_colour_cruk_d()
 
 }

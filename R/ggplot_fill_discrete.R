@@ -31,6 +31,20 @@
 #' @export
 #'
 #' @examples
+#'
+#' library(ggplot2)
+#'
+#' ggplot(
+#'   data.frame(
+#'     x = LETTERS[1:5],
+#'     y = 5:1
+#'   )
+#' ) +
+#'   aes(x = x, y = y, fill = x) +
+#'   geom_col() + theme_classic() +
+#'   guides(fill = "none") + coord_equal() +
+#'   scale_fill_ukri_d()
+#'
 scale_fill_ukri_d <- function(
     aesthetics = "fill",
     scale_name = "UKRI_Blues",
@@ -97,6 +111,20 @@ scale_fill_ukri_d <- function(
 #' @export
 #'
 #' @examples
+#'
+#' library(ggplot2)
+#'
+#' ggplot(
+#'   data.frame(
+#'     x = LETTERS[1:5],
+#'     y = 5:1
+#'   )
+#' ) +
+#'   aes(x = x, y = y, fill = x) +
+#'   geom_col() + theme_classic() +
+#'   guides(fill = "none") + coord_equal() +
+#'   scale_fill_cruk_d()
+#'
 scale_fill_cruk_d <- function(
     aesthetics = "fill",
     scale_name = "CRUK_Colours",

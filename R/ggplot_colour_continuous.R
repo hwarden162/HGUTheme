@@ -22,6 +22,33 @@
 #' @export
 #'
 #' @examples
+#'
+#' library(ggplot2)
+#'
+#' ggplot(
+#'   data.frame(
+#'     x = runif(1500),
+#'     y = runif(1500)
+#'   )
+#' ) +
+#'   aes(x = x, y = y, colour = x) +
+#'   geom_point() + theme_classic() +
+#'   guides(colour = "none") +
+#'   coord_equal() +
+#'   scale_colour_ukri_c()
+#'
+#'   ggplot(
+#'   data.frame(
+#'     x = runif(1500),
+#'     y = runif(1500)
+#'   )
+#' ) +
+#'   aes(x = x, y = y, colour = x) +
+#'   geom_point() + theme_classic() +
+#'   guides(colour = "none") +
+#'   coord_equal() +
+#'   scale_colour_ukri_c(midpoint = 0.5)
+#'
 scale_colour_ukri_c <- function(
     ...,
     low = ukri_dark_blue(),
@@ -81,6 +108,33 @@ scale_colour_ukri_c <- function(
 #' @export
 #'
 #' @examples
+#'
+#' library(ggplot2)
+#'
+#' ggplot(
+#'   data.frame(
+#'     x = runif(1500),
+#'     y = runif(1500)
+#'   )
+#' ) +
+#'   aes(x = x, y = y, colour = x) +
+#'   geom_point() + theme_classic() +
+#'   guides(colour = "none") +
+#'   coord_equal() +
+#'   scale_colour_cruk_c()
+#'
+#' ggplot(
+#'   data.frame(
+#'     x = runif(1500),
+#'     y = runif(1500)
+#'   )
+#' ) +
+#'   aes(x = x, y = y, colour = x) +
+#'   geom_point() + theme_classic() +
+#'   guides(colour = "none") +
+#'   coord_equal() +
+#'   scale_colour_cruk_c(midpoint = 0.5)
+#'
 scale_colour_cruk_c <- function(
     ...,
     low = cruk_dark_blue(),

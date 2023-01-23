@@ -44,3 +44,32 @@ A layer that can be added to a ggplot2 object.
 A layer that can be added to \code{ggplot2} plots to change the colour aesthetic
 to interpolate values from the blues used in the UKRI logo.
 }
+\examples{
+
+library(ggplot2)
+
+ggplot(
+  data.frame(
+    x = runif(1500),
+    y = runif(1500)
+  )
+) +
+  aes(x = x, y = y, colour = x) +
+  geom_point() + theme_classic() +
+  guides(colour = "none") +
+  coord_equal() +
+  scale_colour_ukri_c()
+
+  ggplot(
+  data.frame(
+    x = runif(1500),
+    y = runif(1500)
+  )
+) +
+  aes(x = x, y = y, colour = x) +
+  geom_point() + theme_classic() +
+  guides(colour = "none") +
+  coord_equal() +
+  scale_colour_ukri_c(midpoint = 0.5)
+
+}

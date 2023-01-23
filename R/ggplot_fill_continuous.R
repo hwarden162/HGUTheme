@@ -19,6 +19,31 @@
 #' @export
 #'
 #' @examples
+#'
+#' library(ggplot2)
+#'
+#' ggplot(
+#'   data.frame(
+#'     x = rnorm(10000),
+#'     y = rnorm(10000)
+#'   )
+#' ) +
+#'   aes(x = x, y = y) +
+#'   geom_hex() + theme_classic() +
+#'   guides(fill = "none") + coord_equal() +
+#'   scale_fill_ukri_c()
+#'
+#' ggplot(
+#'   data.frame(
+#'     x = rnorm(10000),
+#'     y = rnorm(10000)
+#'   )
+#' ) +
+#'   aes(x = x, y = y) +
+#'   geom_hex() + theme_classic() +
+#'   guides(fill = "none") + coord_equal() +
+#'   scale_fill_ukri_c(midpoint = 40)
+#'
 scale_fill_ukri_c <- function(
     ...,
     low = ukri_dark_blue(),
@@ -75,6 +100,31 @@ scale_fill_ukri_c <- function(
 #' @export
 #'
 #' @examples
+#'
+#' library(ggplot2)
+#'
+#' ggplot(
+#'   data.frame(
+#'     x = rnorm(10000),
+#'     y = rnorm(10000)
+#'   )
+#' ) +
+#'   aes(x = x, y = y) +
+#'   geom_hex() + theme_classic() +
+#'   guides(fill = "none") + coord_equal() +
+#'   scale_fill_cruk_c()
+#'
+#' ggplot(
+#'   data.frame(
+#'     x = rnorm(10000),
+#'     y = rnorm(10000)
+#'   )
+#' ) +
+#'   aes(x = x, y = y) +
+#'   geom_hex() + theme_classic() +
+#'   guides(fill = "none") + coord_equal() +
+#'   scale_fill_cruk_c(midpoint = 40)
+#'
 scale_fill_cruk_c <- function(
     ...,
     low = cruk_dark_blue(),
