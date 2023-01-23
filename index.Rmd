@@ -27,11 +27,9 @@ library(tidyverse)
 [![pages-build-deployment](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/hwarden162/HGUTheme/actions/workflows/pages/pages-build-deployment)
 <!-- badges: end -->
 
-Unofficial ggplot2 themes for using the colour palette of the MRC HGU logo.
+An *unofficial* package to help create plots that align with the colour themes of the the MRC Human Genetics Unit and other units at the Institute of Genetics and Cancer, Edinburgh. There are functions to return the colours used in each respective theme, return palettes that interpolate between the colours in each respective theme and layers that can be added to `ggplot2` plots to automatically scale colour and fill aesthetics.
 
-The MRC Human Genetics Unit Powerpoint template comes with a preset colour theme that controls the colours of most elements of the presentation. When creating a plot in `ggplot2` it is possible to set the colour of various parts of various elements and `HGUTheme` contains multiple functions to help you do so. It is not always appropriate to use these colours (as discussed in 'Get started') but where it is appropriate `HGUTheme` allows you to easily create a consistent colour theme for your presentations.
-
-**These palettes were created to align with the colour schemes of the MRC and HGU palettes. However, the original palettes were not designed for use on plots and so please consider the effect of your colour choices for colourblind people when constructing your plots. More information on making your scientific plots colourblind friendly can be found in the [Colour Blind Friendly Plotting](https://hwarden162.github.io/HGUTheme/articles/ColourBlind.html) section.**
+**These palettes were created to align with the colour schemes of the respective institutions which themselves were not designed for use on plots. Therefore, please be thoughtful with your use of these colours and how they may effect colourblind people in interpretting the plots. More information on making your scientific plots colourblind friendly can be found in the [Colour Blind Friendly Plotting](https://hwarden162.github.io/HGUTheme/articles/ColourBlind.html) section.**
 
 ## Installation
 
@@ -43,18 +41,17 @@ devtools::install_github("hwarden162/HGUTheme")
 ```
 
 ## Colour Codes
-Taken from the MRC HGU Powerpoint template:
 
-* ![#2D2E5F](https://via.placeholder.com/15/2D2E5F/2D2E5F.png) Dark blue: `#2D2E5F`
-* ![#3A88A9](https://via.placeholder.com/15/3A88A9/3A88A9.png) Mid blue: `#3A88A9`
-* ![#00BAD2](https://via.placeholder.com/15/00BAD2/00BAD2) Light blue: `#00BAD2`
+### UKRI Colours
 
-Taken from the MRC Powerpoint template:
+* ![#2D2E5F](https://via.placeholder.com/15/2D2E5F/2D2E5F.png) `ukri_dark_blue()` - `#2D2E5F`
+* ![#3A88A9](https://via.placeholder.com/15/3A88A9/3A88A9.png) `ukri_mid_blue()` - `#3A88A9`
+* ![#00BAD2](https://via.placeholder.com/15/00BAD2/00BAD2.png) `ukri_light_blue()` - `#00BAD2`
+* ![#F2BC44](https://via.placeholder.com/15/F2BC44/F2BC44.png) `ukri_orange()` - `#F2BC44`
 
-* ![#2E2C5E](https://via.placeholder.com/15/2E2C5E/2E2C5E) Dark Blue: `#2E2C5E`
-* ![#102F83](https://via.placeholder.com/15/102F83/102F83.png) Darkish blue: `#102F83`
-* ![#305CEF](https://via.placeholder.com/15/305CEF/305CEF.png) Mid blue: `#305CEF`
-* ![#D85941](https://via.placeholder.com/15/D85941/D85941.png) Red: `#D85941`
-* ![#4AA789](https://via.placeholder.com/15/4AA789/4AA789.png) Green: `#4AA789`
-* ![#F1BE44](https://via.placeholder.com/15/F1BE44/F1BE44.png) Yellow: `#F1BE44`
-* ![#DADADA](https://via.placeholder.com/15/DADADA/DADADA.png) Gray: `#DADADA`
+### CRUK Colours
+
+* ![#2E0188](https://via.placeholder.com/15/2E0188/2E0188.png) `cruk_dark_blue()` - `#2E0188`
+* ![#00B6EA](https://via.placeholder.com/15/00B6EA/00B6EA.png) `cruk_light_blue()` - `#00B6EA`
+* ![#EE0286](https://via.placeholder.com/15/EE0286/EE0286.png) `cruk_pink()` - `#EE0286`
+* ![#C5C5C5](https://via.placeholder.com/15/C5C5C5/C5C5C5.png) `cruk_grey()` - `#C5C5C5`

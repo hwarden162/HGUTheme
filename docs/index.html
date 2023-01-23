@@ -82,9 +82,8 @@
 </div>
 <!-- badges: start -->
 
-<p>Unofficial ggplot2 themes for using the colour palette of the MRC HGU logo.</p>
-<p>The MRC Human Genetics Unit Powerpoint template comes with a preset colour theme that controls the colours of most elements of the presentation. When creating a plot in <code>ggplot2</code> it is possible to set the colour of various parts of various elements and <code>HGUTheme</code> contains multiple functions to help you do so. It is not always appropriate to use these colours (as discussed in ‘Get started’) but where it is appropriate <code>HGUTheme</code> allows you to easily create a consistent colour theme for your presentations.</p>
-<p><strong>These palettes were created to align with the colour schemes of the MRC and HGU palettes. However, the original palettes were not designed for use on plots and so please consider the effect of your colour choices for colourblind people when constructing your plots. More information on making your scientific plots colourblind friendly can be found in the <a href="https://hwarden162.github.io/HGUTheme/articles/ColourBlind.html">Colour Blind Friendly Plotting</a> section.</strong></p>
+<p>An <em>unofficial</em> package to help create plots that align with the colour themes of the the MRC Human Genetics Unit and other units at the Institute of Genetics and Cancer, Edinburgh. There are functions to return the colours used in each respective theme, return palettes that interpolate between the colours in each respective theme and layers that can be added to <code>ggplot2</code> plots to automatically scale colour and fill aesthetics.</p>
+<p><strong>These palettes were created to align with the colour schemes of the respective institutions which themselves were not designed for use on plots. Therefore, please be thoughtful with your use of these colours and how they may effect colourblind people in interpretting the plots. More information on making your scientific plots colourblind friendly can be found in the <a href="https://hwarden162.github.io/HGUTheme/articles/ColourBlind.html">Colour Blind Friendly Plotting</a> section.</strong></p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -96,42 +95,42 @@
 <div class="section level2">
 <h2 id="colour-codes">Colour Codes<a class="anchor" aria-label="anchor" href="#colour-codes"></a>
 </h2>
-<p>Taken from the MRC HGU Powerpoint template:</p>
+<div class="section level3">
+<h3 id="ukri-colours">UKRI Colours<a class="anchor" aria-label="anchor" href="#ukri-colours"></a>
+</h3>
 <ul>
 <li>
-<img src="https://via.placeholder.com/15/2D2E5F/2D2E5F.png" alt="#2D2E5F"> Dark blue: <code>#2D2E5F</code>
+<img src="https://via.placeholder.com/15/2D2E5F/2D2E5F.png" alt="#2D2E5F"><code><a href="reference/ukri_dark_blue.html">ukri_dark_blue()</a></code> - <code>#2D2E5F</code>
 </li>
 <li>
-<img src="https://via.placeholder.com/15/3A88A9/3A88A9.png" alt="#3A88A9"> Mid blue: <code>#3A88A9</code>
+<img src="https://via.placeholder.com/15/3A88A9/3A88A9.png" alt="#3A88A9"><code><a href="reference/ukri_mid_blue.html">ukri_mid_blue()</a></code> - <code>#3A88A9</code>
 </li>
 <li>
-<img src="https://via.placeholder.com/15/00BAD2/00BAD2" alt="#00BAD2"> Light blue: <code>#00BAD2</code>
+<img src="https://via.placeholder.com/15/00BAD2/00BAD2.png" alt="#00BAD2"><code><a href="reference/ukri_light_blue.html">ukri_light_blue()</a></code> - <code>#00BAD2</code>
+</li>
+<li>
+<img src="https://via.placeholder.com/15/F2BC44/F2BC44.png" alt="#F2BC44"><code><a href="reference/ukri_orange.html">ukri_orange()</a></code> - <code>#F2BC44</code>
 </li>
 </ul>
-<p>Taken from the MRC Powerpoint template:</p>
+</div>
+<div class="section level3">
+<h3 id="cruk-colours">CRUK Colours<a class="anchor" aria-label="anchor" href="#cruk-colours"></a>
+</h3>
 <ul>
 <li>
-<img src="https://via.placeholder.com/15/2E2C5E/2E2C5E" alt="#2E2C5E"> Dark Blue: <code>#2E2C5E</code>
+<img src="https://via.placeholder.com/15/2E0188/2E0188.png" alt="#2E0188"><code><a href="reference/cruk_dark_blue.html">cruk_dark_blue()</a></code> - <code>#2E0188</code>
 </li>
 <li>
-<img src="https://via.placeholder.com/15/102F83/102F83.png" alt="#102F83"> Darkish blue: <code>#102F83</code>
+<img src="https://via.placeholder.com/15/00B6EA/00B6EA.png" alt="#00B6EA"><code><a href="reference/cruk_light_blue.html">cruk_light_blue()</a></code> - <code>#00B6EA</code>
 </li>
 <li>
-<img src="https://via.placeholder.com/15/305CEF/305CEF.png" alt="#305CEF"> Mid blue: <code>#305CEF</code>
+<img src="https://via.placeholder.com/15/EE0286/EE0286.png" alt="#EE0286"><code><a href="reference/cruk_pink.html">cruk_pink()</a></code> - <code>#EE0286</code>
 </li>
 <li>
-<img src="https://via.placeholder.com/15/D85941/D85941.png" alt="#D85941"> Red: <code>#D85941</code>
-</li>
-<li>
-<img src="https://via.placeholder.com/15/4AA789/4AA789.png" alt="#4AA789"> Green: <code>#4AA789</code>
-</li>
-<li>
-<img src="https://via.placeholder.com/15/F1BE44/F1BE44.png" alt="#F1BE44"> Yellow: <code>#F1BE44</code>
-</li>
-<li>
-<img src="https://via.placeholder.com/15/DADADA/DADADA.png" alt="#DADADA"> Gray: <code>#DADADA</code>
+<img src="https://via.placeholder.com/15/C5C5C5/C5C5C5.png" alt="#C5C5C5"><code><a href="reference/cruk_grey.html">cruk_grey()</a></code> - <code>#C5C5C5</code>
 </li>
 </ul>
+</div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
