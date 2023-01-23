@@ -55,7 +55,7 @@ scale_fill_ukri_c <- function(
     guide = "colourbar",
     aesthetics = "fill"
 ) {
-  if (is_null(midpoint)) {
+  if (is.null(midpoint)) {
     ggplot2::scale_fill_gradient(
       ...,
       low = low,
@@ -136,7 +136,7 @@ scale_fill_cruk_c <- function(
     guide = "colourbar",
     aesthetics = "fill"
 ) {
-  if (is_null(midpoint)) {
+  if (is.null(midpoint)) {
     ggplot2::scale_fill_gradient(
       ...,
       low = low,
