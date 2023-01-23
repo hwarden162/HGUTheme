@@ -31,6 +31,8 @@ An *unofficial* package to help create plots that align with the colour themes o
 
 **These palettes were created to align with the colour schemes of the respective institutions which themselves were not designed for use on plots. Therefore, please be thoughtful with your use of these colours and how they may effect colourblind people in interpretting the plots. More information on making your scientific plots colourblind friendly can be found in the [Colour Blind Friendly Plotting](https://hwarden162.github.io/HGUTheme/articles/ColourBlind.html) section.**
 
+![](./man/figures/logo_plots.png)
+
 ## Installation
 
 You can install the development version of HGUTheme from [GitHub](https://github.com/hwarden162/HGUTheme) with:

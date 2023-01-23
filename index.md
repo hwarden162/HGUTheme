@@ -32,6 +32,8 @@ can be found in the [Colour Blind Friendly
 Plotting](https://hwarden162.github.io/HGUTheme/articles/ColourBlind.html)
 section.**
 
+![](./man/figures/logo_plots.png)
+
 ## Installation
 
 You can install the development version of HGUTheme from
