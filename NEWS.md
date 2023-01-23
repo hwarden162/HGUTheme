@@ -1,3 +1,9 @@
+# HGUTheme 0.1.0
+
+* Redefining all the colour names
+* Adding CRUK logo palette
+* Adding UKRI orange
+
 # HGUTheme 0.0.1
 
 * HGUTheme v0.0.1 released
