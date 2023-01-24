@@ -70,3 +70,14 @@ ggplot(
   scale_fill_ukri_c(midpoint = 40)
 
 }
+\seealso{
+Other Layer: 
+\code{\link{scale_colour_cruk_c}()},
+\code{\link{scale_colour_cruk_d}()},
+\code{\link{scale_colour_ukri_c}()},
+\code{\link{scale_colour_ukri_d}()},
+\code{\link{scale_fill_cruk_c}()},
+\code{\link{scale_fill_cruk_d}()},
+\code{\link{scale_fill_ukri_d}()}
+}
+\concept{Layer}

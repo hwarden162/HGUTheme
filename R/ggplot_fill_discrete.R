@@ -28,6 +28,7 @@
 #' @param super The super class to use for the constructed scale.
 #'
 #' @return A layer that can be added to a `ggplot2` object.
+#' @family Layer
 #' @export
 #'
 #' @examples
@@ -108,6 +109,7 @@ scale_fill_ukri_d <- function(
 #' @param super The super class to use for the constructed scale.
 #'
 #' @return A layer that can be added to a `ggplot2` object.
+#' @family Layer
 #' @export
 #'
 #' @examples

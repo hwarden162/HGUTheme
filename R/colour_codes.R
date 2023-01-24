@@ -6,6 +6,7 @@
 #' Access the HEX code of the dark blue used in the UKRI logo.
 #'
 #' @return The HEX code of the UKRI dark blue.
+#' @family Colour
 #' @export
 #'
 #' @examples
@@ -24,6 +25,7 @@ ukri_dark_blue <- function() {
 #' Access the HEX code of the mid blue used in the UKRI logo.
 #'
 #' @return The HEX code of the UKRI mid blue.
+#' @family Colour
 #' @export
 #'
 #' @examples
@@ -42,6 +44,7 @@ ukri_mid_blue <- function() {
 #' Access the HEX code of the light blue used in the UKRI logo.
 #'
 #' @return The HEX code of the UKRI light blue.
+#' @family Colour
 #' @export
 #'
 #' @examples
@@ -60,6 +63,7 @@ ukri_light_blue <- function() {
 #' Access the HEX code of the orange used by the UKRI.
 #'
 #' @return The HEX code of the UKRI orange.
+#' @family Colour
 #' @export
 #'
 #' @examples
@@ -80,6 +84,7 @@ ukri_orange <- function() {
 #' Access the HEX code of the dark blue used by CRUK.
 #'
 #' @return The HEX code of the CRUK dark blue.
+#' @family Colour
 #' @export
 #'
 #' @examples
@@ -98,6 +103,7 @@ cruk_dark_blue <- function() {
 #' Access the HEX code of the light blue used by CRUK.
 #'
 #' @return The HEX code of the CRUK light blue.
+#' @family Colour
 #' @export
 #'
 #' @examples
@@ -116,6 +122,7 @@ cruk_light_blue <- function() {
 #' Access the HEX code of the pink used by CRUK.
 #'
 #' @return The HEX code of the CRUK pink.
+#' @family Colour
 #' @export
 #'
 #' @examples
@@ -134,6 +141,7 @@ cruk_pink <- function() {
 #' Access the HEX code of the grey used by CRUK.
 #'
 #' @return The HEX code of the CRUK grey.
+#' @family Colour
 #' @export
 #'
 #' @examples

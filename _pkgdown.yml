@@ -18,3 +18,20 @@ template:
   bootstrap: 5
   bootswatch: lumen
 
+reference:
+- title: Access the HEX Codes of Logo Colours
+- contents:
+  - has_concept("Colour")
+- title: Access a Palette of Logo Colours
+- contents:
+  - has_concept("Palette")
+- title: Layers to Add to `ggplot2` Plots
+- contents:
+  - has_concept("Layer")
+- title: Helper Functions Used by `HGUTheme`
+- contents:
+  - has_concept("Misc")
+
+
+
+

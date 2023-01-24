@@ -6,6 +6,7 @@
 #' Access the HEX codes of the blues used in the UKRI logo.
 #'
 #' @return The HEX codes of the UKRI blues.
+#' @family Palette
 #' @export
 #'
 #' @examples
@@ -38,6 +39,7 @@ ukri_blues <- function() {
 #' @param ... Arguments to be passed to `grDevices::colorRampPalette`.
 #'
 #' @return A function to generate palettes that interpolate the UKRI blues.
+#' @family Misc
 #'
 ukri_blues_palette_func_gen <- function(
     colours = ukri_blues(),
@@ -76,6 +78,7 @@ ukri_blues_palette_func_gen <- function(
 #'
 #' @return A character vector of colours iterpolated from the blues in the UKRI
 #'     logo.
+#' @family Palette
 #' @export
 #'
 #' @examples
@@ -111,6 +114,7 @@ ukri_blues_n <- function(
 #' Access the HEX codes of the colours used in the CRUK logo.
 #'
 #' @return The HEX codes of the CRUK colours.
+#' @family Palette
 #' @export
 #'
 #' @examples
@@ -143,6 +147,7 @@ cruk_colours <- function() {
 #' @param ... Arguments to be passed to `grDevices::colorRampPalette`.
 #'
 #' @return A function to generate palettes that interpolate the CRUK colours.
+#' @family Misc
 #'
 cruk_colours_palette_func_gen <- function(
     colours = cruk_colours(),
@@ -181,6 +186,7 @@ cruk_colours_palette_func_gen <- function(
 #'
 #' @return A character vector of colours iterpolated from the blues in the UKRI
 #'     logo.
+#' @family Palette
 #' @export
 #'
 #' @examples

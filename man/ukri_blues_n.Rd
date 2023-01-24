@@ -50,3 +50,10 @@ barplot(
 )
 
 }
+\seealso{
+Other Palette: 
+\code{\link{cruk_colours_n}()},
+\code{\link{cruk_colours}()},
+\code{\link{ukri_blues}()}
+}
+\concept{Palette}

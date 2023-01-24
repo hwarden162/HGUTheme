@@ -19,6 +19,7 @@
 #' @param aesthetics The aesthetic to apply this scale to.
 #'
 #' @return A layer that can be added to a ggplot2 object.
+#' @family Layer
 #' @export
 #'
 #' @examples
@@ -105,6 +106,7 @@ scale_colour_ukri_c <- function(
 #' @param aesthetics The aesthetic to apply this scale to.
 #'
 #' @return A layer that can be added to a ggplot2 object.
+#' @family Layer
 #' @export
 #'
 #' @examples
