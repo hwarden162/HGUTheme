@@ -52,38 +52,21 @@
 #'
 scale_colour_ukri_c <- function(
     ...,
-    low = ukri_dark_blue(),
-    mid = ukri_mid_blue(),
-    high = ukri_light_blue(),
+    colours = ukri_blues(),
     midpoint = NULL,
     space = "Lab",
     na.value = cruk_grey(),
     guide = "colourbar",
     aesthetics = "colour"
 ) {
-  if (is.null(midpoint)) {
-    ggplot2::scale_colour_gradient(
-      ...,
-      low = low,
-      high = high,
-      space = space,
-      na.value = na.value,
-      guide = guide,
-      aesthetics = aesthetics
-    )
-  } else {
-    ggplot2::scale_colour_gradient2(
-      ...,
-      low = low,
-      mid = mid,
-      high = high,
-      midpoint = midpoint,
-      space = space,
-      na.value = na.value,
-      guide = guide,
-      aesthetics = aesthetics
-    )
-  }
+  ggplot2::scale_colour_gradientn(
+    ...,
+    colours = colours,
+    space = space,
+    na.value = na.value,
+    guide = guide,
+    aesthetics = aesthetics
+  )
 }
 
 # CRUK Colours ------------------------------------------------------------
@@ -139,36 +122,19 @@ scale_colour_ukri_c <- function(
 #'
 scale_colour_cruk_c <- function(
     ...,
-    low = cruk_dark_blue(),
-    mid = cruk_light_blue(),
-    high = cruk_pink(),
+    colours = cruk_colours(),
     midpoint = NULL,
     space = "Lab",
     na.value = cruk_grey(),
     guide = "colourbar",
     aesthetics = "colour"
 ) {
-  if (is.null(midpoint)) {
-    ggplot2::scale_colour_gradient(
-      ...,
-      low = low,
-      high = high,
-      space = space,
-      na.value = na.value,
-      guide = guide,
-      aesthetics = aesthetics
-    )
-  } else {
-    ggplot2::scale_colour_gradient2(
-      ...,
-      low = low,
-      mid = mid,
-      high = high,
-      midpoint = midpoint,
-      space = space,
-      na.value = na.value,
-      guide = guide,
-      aesthetics = aesthetics
-    )
-  }
+  ggplot2::scale_colour_gradientn(
+    ...,
+    colours = colours,
+    space = space,
+    na.value = na.value,
+    guide = guide,
+    aesthetics = aesthetics
+  )
 }
