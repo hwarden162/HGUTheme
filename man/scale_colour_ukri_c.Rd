@@ -6,9 +6,7 @@
 \usage{
 scale_colour_ukri_c(
   ...,
-  low = ukri_dark_blue(),
-  mid = ukri_mid_blue(),
-  high = ukri_light_blue(),
+  colours = ukri_blues(),
   midpoint = NULL,
   space = "Lab",
   na.value = cruk_grey(),
@@ -20,12 +18,6 @@ scale_colour_ukri_c(
 \item{...}{Arguments passed to \code{ggplot2::scale_colour_gradient} or
 \code{ggplot2::scale_colour_gradient2}.}
 
-\item{low}{Colour for the low end of the gradient.}
-
-\item{mid}{Colour for the midpoit of the gradient.}
-
-\item{high}{Colour for the high end of the gradient.}
-
 \item{midpoint}{The midpoint (in data value) of the diverging scale. Diverging
 scale only used if the midpoint is not equal to \code{NULL}, which is the default.}
 
@@ -36,6 +28,12 @@ scale only used if the midpoint is not equal to \code{NULL}, which is the defaul
 \item{guide}{Type of legend.}
 
 \item{aesthetics}{The aesthetic to apply this scale to.}
+
+\item{low}{Colour for the low end of the gradient.}
+
+\item{mid}{Colour for the midpoit of the gradient.}
+
+\item{high}{Colour for the high end of the gradient.}
 }
 \value{
 A layer that can be added to a ggplot2 object.
@@ -59,18 +57,6 @@ ggplot(
   guides(colour = "none") +
   coord_equal() +
   scale_colour_ukri_c()
-
-  ggplot(
-  data.frame(
-    x = runif(1500),
-    y = runif(1500)
-  )
-) +
-  aes(x = x, y = y, colour = x) +
-  geom_point() + theme_classic() +
-  guides(colour = "none") +
-  coord_equal() +
-  scale_colour_ukri_c(midpoint = 0.5)
 
 }
 \seealso{

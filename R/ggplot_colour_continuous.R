@@ -38,18 +38,6 @@
 #'   coord_equal() +
 #'   scale_colour_ukri_c()
 #'
-#'   ggplot(
-#'   data.frame(
-#'     x = runif(1500),
-#'     y = runif(1500)
-#'   )
-#' ) +
-#'   aes(x = x, y = y, colour = x) +
-#'   geom_point() + theme_classic() +
-#'   guides(colour = "none") +
-#'   coord_equal() +
-#'   scale_colour_ukri_c(midpoint = 0.5)
-#'
 scale_colour_ukri_c <- function(
     ...,
     colours = ukri_blues(),
@@ -107,18 +95,6 @@ scale_colour_ukri_c <- function(
 #'   guides(colour = "none") +
 #'   coord_equal() +
 #'   scale_colour_cruk_c()
-#'
-#' ggplot(
-#'   data.frame(
-#'     x = runif(1500),
-#'     y = runif(1500)
-#'   )
-#' ) +
-#'   aes(x = x, y = y, colour = x) +
-#'   geom_point() + theme_classic() +
-#'   guides(colour = "none") +
-#'   coord_equal() +
-#'   scale_colour_cruk_c(midpoint = 0.5)
 #'
 scale_colour_cruk_c <- function(
     ...,

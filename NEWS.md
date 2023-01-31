@@ -1,3 +1,7 @@
+# HGUTheme 0.1.1
+
+* Fixing `ggplot2` continuous layers
+
 # HGUTheme 0.1.0
 
 * Redefining all the colour names

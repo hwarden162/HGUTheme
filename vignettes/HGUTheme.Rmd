@@ -106,7 +106,7 @@ plot_data %>%
 
 There are layers for changing the colour and the fill aesthetics of your plot. These functions end in either a *c* or a *d* indicating whether you are using a continuous or a discrete scale.
 
-For continuous scales, v0.1.0 of `HGUTheme` will only automatically interpolate between the first and last colour of the logo, as shown here with this CRUK logo colour theme missing the light blue.
+For continuous scales, v0.1.0 of `HGUTheme` will only automatically interpolate between the colours of the logo, as shown here with this CRUK logo colour theme.
 
 ```{r}
 tibble(
@@ -124,26 +124,6 @@ tibble(
   geom_point() + theme_classic() +
   guides(colour = "none") + coord_equal() +
   scale_colour_cruk_c()
-```
-
-However, adding a `midpoint` argument will trigger the full theme, this is a bug that will be ironed out in a future release.
-
-```{r}
-tibble(
-  x = runif(1500),
-  y = runif(1500)
-) %>%
-  filter(
-    (x - 0.5)^2 + (y - 0.5)^2 < 0.25
-  ) %>%
-  mutate(
-    col = (x - 0.5)^2 + (y - 0.5)^2
-  ) %>%
-  ggplot() +
-  aes(x = x, y = y, colour = col) +
-  geom_point() + theme_classic() +
-  guides(colour = "none") + coord_equal() +
-  scale_colour_cruk_c(midpoint = 0.1)
 ```
 
 It is important to note, that these layers do not have to be used and the HEX code functions can be used to supply arguments to pre existing `ggplot2` layers for similar effects, for example if the user wanted to recreate the above plot but without the dark blue, this can be acheived via
