@@ -31,6 +31,21 @@
     <loc>https://hwarden162.github.io/HGUTheme/news/index.html</loc>
   </url>
   <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/cgem_blue.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/cgem_colours.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/cgem_colours_n.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/cgem_colours_palette_func_gen.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/cgem_red.html</loc>
+  </url>
+  <url>
     <loc>https://hwarden162.github.io/HGUTheme/reference/cruk_colours.html</loc>
   </url>
   <url>
@@ -55,6 +70,12 @@
     <loc>https://hwarden162.github.io/HGUTheme/reference/index.html</loc>
   </url>
   <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_cgem_c.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_cgem_d.html</loc>
+  </url>
+  <url>
     <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_cruk_c.html</loc>
   </url>
   <url>
@@ -65,6 +86,12 @@
   </url>
   <url>
     <loc>https://hwarden162.github.io/HGUTheme/reference/scale_colour_ukri_d.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_cgem_c.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_cgem_d.html</loc>
   </url>
   <url>
     <loc>https://hwarden162.github.io/HGUTheme/reference/scale_fill_cruk_c.html</loc>
@@ -91,12 +118,30 @@
     <loc>https://hwarden162.github.io/HGUTheme/reference/ukri_dark_blue.html</loc>
   </url>
   <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/ukri_dark_purple.html</loc>
+  </url>
+  <url>
     <loc>https://hwarden162.github.io/HGUTheme/reference/ukri_light_blue.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/ukri_light_purple.html</loc>
   </url>
   <url>
     <loc>https://hwarden162.github.io/HGUTheme/reference/ukri_mid_blue.html</loc>
   </url>
   <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/ukri_mid_purple.html</loc>
+  </url>
+  <url>
     <loc>https://hwarden162.github.io/HGUTheme/reference/ukri_orange.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/ukri_purples.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/ukri_purples_n.html</loc>
+  </url>
+  <url>
+    <loc>https://hwarden162.github.io/HGUTheme/reference/ukri_purples_palette_func_gen.html</loc>
   </url>
 </urlset>

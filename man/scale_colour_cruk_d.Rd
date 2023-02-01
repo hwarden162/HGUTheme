@@ -83,9 +83,13 @@ ggplot(
 }
 \seealso{
 Other Layer: 
+\code{\link{scale_colour_cgem_c}()},
+\code{\link{scale_colour_cgem_d}()},
 \code{\link{scale_colour_cruk_c}()},
 \code{\link{scale_colour_ukri_c}()},
 \code{\link{scale_colour_ukri_d}()},
+\code{\link{scale_fill_cgem_c}()},
+\code{\link{scale_fill_cgem_d}()},
 \code{\link{scale_fill_cruk_c}()},
 \code{\link{scale_fill_cruk_d}()},
 \code{\link{scale_fill_ukri_c}()},

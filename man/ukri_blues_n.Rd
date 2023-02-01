@@ -52,8 +52,12 @@ barplot(
 }
 \seealso{
 Other Palettes: 
+\code{\link{cgem_colours_n}()},
+\code{\link{cgem_colours}()},
 \code{\link{cruk_colours_n}()},
 \code{\link{cruk_colours}()},
-\code{\link{ukri_blues}()}
+\code{\link{ukri_blues}()},
+\code{\link{ukri_purples_n}()},
+\code{\link{ukri_purples}()}
 }
 \concept{Palettes}

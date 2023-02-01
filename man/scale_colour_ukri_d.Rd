@@ -5,6 +5,7 @@
 \title{UKRI Blues Colour Scales (Discrete)}
 \usage{
 scale_colour_ukri_d(
+  colours = "blue",
   aesthetics = "colour",
   scale_name = "UKRI_Blues",
   palette = ukri_blues_palette_func_gen(),
@@ -22,6 +23,10 @@ scale_colour_ukri_d(
 )
 }
 \arguments{
+\item{colours}{The colour palette to use for the colours of the plot. By
+default this is the blues from the UKRI logo. Setting this to \code{"purple"}
+will switch this to the UKRI purples.}
+
 \item{aesthetics}{The names of the aesthetics that this scale works with.}
 
 \item{scale_name}{The name of the scale that should be used for error
@@ -80,12 +85,29 @@ ggplot(
   coord_equal() +
   scale_colour_ukri_d()
 
+ggplot(
+  data.frame(
+    x = runif(800),
+    y = runif(800),
+    col = sample(LETTERS[1:3], 800, replace = TRUE)
+  )
+) +
+  aes(x = x, y = y, colour = col) +
+  geom_point() + theme_classic() +
+  guides(colour = "none") +
+  coord_equal() +
+  scale_colour_ukri_d(colours = "purple")
+
 }
 \seealso{
 Other Layer: 
+\code{\link{scale_colour_cgem_c}()},
+\code{\link{scale_colour_cgem_d}()},
 \code{\link{scale_colour_cruk_c}()},
 \code{\link{scale_colour_cruk_d}()},
 \code{\link{scale_colour_ukri_c}()},
+\code{\link{scale_fill_cgem_c}()},
+\code{\link{scale_fill_cgem_d}()},
 \code{\link{scale_fill_cruk_c}()},
 \code{\link{scale_fill_cruk_d}()},
 \code{\link{scale_fill_ukri_c}()},

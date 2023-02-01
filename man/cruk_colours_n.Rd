@@ -18,7 +18,7 @@ cruk_colours_n(
 \item{n}{The number of colours to return.}
 
 \item{colours}{The colours to interpolate between. By default these are set
-to the blues from the UKRI logo.}
+to the colours from the CRUK logo.}
 
 \item{bias}{A positive number. Higher values will give more widely spaced
 colours at the higher end of the colour spectrum.}
@@ -35,7 +35,7 @@ returned.}
 \item{...}{Arguments to be passed to \code{grDevices::colorRampPalette}.}
 }
 \value{
-A character vector of colours iterpolated from the blues in the UKRI
+A character vector of colours iterpolated from the colours in the CRUK
 logo.
 }
 \description{
@@ -52,8 +52,12 @@ barplot(
 }
 \seealso{
 Other Palettes: 
+\code{\link{cgem_colours_n}()},
+\code{\link{cgem_colours}()},
 \code{\link{cruk_colours}()},
 \code{\link{ukri_blues_n}()},
-\code{\link{ukri_blues}()}
+\code{\link{ukri_blues}()},
+\code{\link{ukri_purples_n}()},
+\code{\link{ukri_purples}()}
 }
 \concept{Palettes}

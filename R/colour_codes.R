@@ -77,6 +77,63 @@ ukri_orange <- function() {
   "#F2BC44"
 }
 
+#' HEX Code of the UKRI Dark Purple
+#'
+#' Access the HEX code of the dark purple used in the UKRI logo.
+#'
+#' @return The HEX code of the UKRI dark purple.
+#' @family UKRI Colours
+#' @export
+#'
+#' @examples
+#'
+#' barplot(
+#'   1:3,
+#'   col = ukri_dark_purple()
+#' )
+#'
+ukri_dark_purple <- function() {
+  ukri_dark_blue()
+}
+
+#' HEX Code of the UKRI Mid Purple
+#'
+#' Access the HEX code of the mid purple used in the UKRI logo.
+#'
+#' @return The HEX code of the UKRI mid purple.
+#' @family UKRI Colours
+#' @export
+#'
+#' @examples
+#'
+#' barplot(
+#'   1:3,
+#'   col = ukri_mid_purple()
+#' )
+#'
+ukri_mid_purple <- function() {
+  "#874598"
+}
+
+#' HEX Code of the UKRI Light Purple
+#'
+#' Access the HEX code of the light purple used in the UKRI logo.
+#'
+#' @return The HEX code of the UKRI light purple.
+#' @family UKRI Colours
+#' @export
+#'
+#' @examples
+#'
+#' barplot(
+#'   1:3,
+#'   col = ukri_light_purple()
+#' )
+#'
+ukri_light_purple <- function() {
+  "#d263e5"
+}
+
 # CRUK Colours ------------------------------------------------------------
 
 #' HEX Code of the CRUK Dark Blue
@@ -153,4 +210,44 @@ cruk_pink <- function() {
 #'
 cruk_grey <- function() {
   "#c5c5c5"
+}
+
+# CGEM Colours ------------------------------------------------------------
+
+#' HEX Code of the CGEM Blue
+#'
+#' Access the HEX code of the blue used by CGEM
+#'
+#' @return The HEX code of the CGEM blue.
+#' @family CGEM Colours
+#' @export
+#'
+#' @examples
+#'
+#' barplot(
+#'   1:3,
+#'   col = cgem_blue()
+#' )
+#'
+cgem_blue <- function() {
+  "#0e2e5a"
+}
+
+#' HEX Code of the CGEM Red
+#'
+#' Access the HEX code of the red used by CGEM
+#'
+#' @return The HEX code of the CGEM red.
+#' @family CGEM Colours
+#' @export
+#'
+#' @examples
+#'
+#' barplot(
+#'   1:3,
+#'   col = cgem_red()
+#' )
+#'
+cgem_red <- function() {
+  "#b62641"
 }

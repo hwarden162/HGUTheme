@@ -23,7 +23,10 @@ barplot(
 \seealso{
 Other UKRI Colours: 
 \code{\link{ukri_dark_blue}()},
+\code{\link{ukri_dark_purple}()},
 \code{\link{ukri_light_blue}()},
+\code{\link{ukri_light_purple}()},
+\code{\link{ukri_mid_purple}()},
 \code{\link{ukri_orange}()}
 }
 \concept{UKRI Colours}

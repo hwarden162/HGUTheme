@@ -39,6 +39,8 @@ Palette Generating Function For UKRI Blues
 }
 \seealso{
 Other Helper Functions: 
-\code{\link{cruk_colours_palette_func_gen}()}
+\code{\link{cgem_colours_palette_func_gen}()},
+\code{\link{cruk_colours_palette_func_gen}()},
+\code{\link{ukri_purples_palette_func_gen}()}
 }
 \concept{Helper Functions}
