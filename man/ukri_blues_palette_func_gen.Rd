@@ -38,7 +38,7 @@ A function to generate palettes that interpolate the UKRI blues.
 Palette Generating Function For UKRI Blues
 }
 \seealso{
-Other Misc: 
+Other Helper Functions: 
 \code{\link{cruk_colours_palette_func_gen}()}
 }
-\concept{Misc}
+\concept{Helper Functions}

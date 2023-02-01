@@ -21,13 +21,9 @@ barplot(
 
 }
 \seealso{
-Other Colour: 
+Other CRUK Colours: 
 \code{\link{cruk_dark_blue}()},
 \code{\link{cruk_grey}()},
-\code{\link{cruk_light_blue}()},
-\code{\link{ukri_dark_blue}()},
-\code{\link{ukri_light_blue}()},
-\code{\link{ukri_mid_blue}()},
-\code{\link{ukri_orange}()}
+\code{\link{cruk_light_blue}()}
 }
-\concept{Colour}
+\concept{CRUK Colours}

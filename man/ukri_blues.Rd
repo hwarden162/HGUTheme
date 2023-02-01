@@ -21,9 +21,9 @@ barplot(
 
 }
 \seealso{
-Other Palette: 
+Other Palettes: 
 \code{\link{cruk_colours_n}()},
 \code{\link{cruk_colours}()},
 \code{\link{ukri_blues_n}()}
 }
-\concept{Palette}
+\concept{Palettes}
