@@ -24,6 +24,7 @@ reference:
   - has_concept("UKRI Colours")
   - has_concept("CRUK Colours")
   - has_concept("CGEM Colours")
+  - has_concept("EBIO Colours")
 - title: Access a Palette of Logo Colours
 - contents:
   - has_concept("Palettes")

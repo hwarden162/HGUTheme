@@ -40,6 +40,7 @@ Palette Generating Function For CRUK Colours
 \seealso{
 Other Helper Functions: 
 \code{\link{cgem_colours_palette_func_gen}()},
+\code{\link{ebio_colours_palette_func_gen}()},
 \code{\link{ukri_blues_palette_func_gen}()},
 \code{\link{ukri_purples_palette_func_gen}()}
 }

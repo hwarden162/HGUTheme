@@ -251,3 +251,81 @@ cgem_blue <- function() {
 cgem_red <- function() {
   "#b62641"
 }
+
+# EastBIO Colours ---------------------------------------------------------
+
+#' HEX Code of the EastBIO Blue
+#'
+#' Access the HEX code of the blue used by EastBIO
+#'
+#' @return The HEX code of the EastBIO blue.
+#' @family EBIO Colours
+#' @export
+#'
+#' @examples
+#'
+#' barplot(
+#'   1:3,
+#'   col = ebio_blue()
+#' )
+#'
+ebio_blue <- function() {
+  "#284e96"
+}
+
+#' HEX Code of the EastBIO Green
+#'
+#' Access the HEX code of the green used by EastBIO
+#'
+#' @return The HEX code of the EastBIO green.
+#' @family EBIO Colours
+#' @export
+#'
+#' @examples
+#'
+#' barplot(
+#'   1:3,
+#'   col = ebio_green()
+#' )
+#'
+ebio_green <- function() {
+  "#386c4d"
+}
+
+#' HEX Code of the EastBIO Orange
+#'
+#' Access the HEX code of the orange used by EastBIO
+#'
+#' @return The HEX code of the EastBIO orange.
+#' @family EBIO Colours
+#' @export
+#'
+#' @examples
+#'
+#' barplot(
+#'   1:3,
+#'   col = ebio_orange()
+#' )
+#'
+ebio_orange <- function() {
+  "#e07e38"
+}
+
+#' HEX Code of the EastBIO red
+#'
+#' Access the HEX code of the red used by EastBIO
+#'
+#' @return The HEX code of the EastBIO red.
+#' @family EBIO Colours
+#' @export
+#'
+#' @examples
+#'
+#' barplot(
+#'   1:3,
+#'   col = ebio_red()
+#' )
+#'
+ebio_red <- function() {
+  "#bb2d4a"
+}
