@@ -54,6 +54,12 @@ devtools::install_github("hwarden162/HGUTheme")
     `ukri_mid_blue()` - `#3A88A9`
 -   ![\#00BAD2](https://via.placeholder.com/15/00BAD2/00BAD2.png)
     `ukri_light_blue()` - `#00BAD2`
+-   ![\#2D2E5F](https://via.placeholder.com/15/2D2E5F/2D2E5F.png)
+    `ukri_dark_purple()` - `#2D2E5F`
+-   ![\#874598](https://via.placeholder.com/15/874598/874598.png)
+    `ukri_mid_purple()` - `#874598`
+-   ![\#D263E5](https://via.placeholder.com/15/D263E5/D263E5.png)
+    `ukri_light_purple()` - `#D263E5`
 -   ![\#F2BC44](https://via.placeholder.com/15/F2BC44/F2BC44.png)
     `ukri_orange()` - `#F2BC44`
 
@@ -67,3 +73,21 @@ devtools::install_github("hwarden162/HGUTheme")
     `cruk_pink()` - `#EE0286`
 -   ![\#C5C5C5](https://via.placeholder.com/15/C5C5C5/C5C5C5.png)
     `cruk_grey()` - `#C5C5C5`
+
+### CGEM Colours
+
+-   ![\#0E2E5A](https://via.placeholder.com/15/0E2E5A/0E2E5A.png)
+    `cgem_blue()` - `#0E2E5A`
+-   ![\#B62641](https://via.placeholder.com/15/B62641/B62641.png)
+    `cgem_red()` - `#B62641`
+
+### EastBIO Colours
+
+-   ![\#284E96](https://via.placeholder.com/15/284E96/284E96.png)
+    `ebio_blue()` - `#284E96`
+-   ![\#386C4D](https://via.placeholder.com/15/386C4D/386C4D.png)
+    `ebio_green()` - `#386C4D`
+-   ![\#E07E38](https://via.placeholder.com/15/E07E38/E07E38.png)
+    `ebio_orange()` - `#E07E38`
+-   ![\#BB2D4A](https://via.placeholder.com/15/BB2D4A/BB2D4A.png)
+    `ebio_red()` - `#BB2D4A`
